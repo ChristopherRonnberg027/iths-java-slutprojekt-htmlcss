@@ -1,57 +1,118 @@
 /*'Space Mono'*/
 /*'Work Sans', sans-serif*/
+body {
+  min-width: 1128px; }
+
 h1, h2, h3, p {
   font-family: "Helvetica"; }
+
+h1 {
+  font-size: 5rem; }
+
+h3 {
+  text-align: center;
+  color: #fff2c9;
+  font-size: 3rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em; }
 
 img {
   width: 100%; }
 
 header h1 {
   margin: 0 auto;
-  color: #fff2c9;
-  font-size: 4rem; }
+  color: #fff2c9; }
 
-header h3 {
-  text-align: center;
-  color: #fff2c9;
+nav a {
+  margin: .5rem;
   font-size: 2rem;
-  margin-block-start: 0em;
-  margin-block-end: 0em; }
-
-a {
   font-family: "Helvetica";
   color: #fff2c9;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-weight: 800; }
 
 .headertextbox2 {
-  padding: 15rem; }
-
-body {
-  max-width: 1128px; }
+  padding: 7rem; }
 
 .grid-container {
+  margin: 2rem;
   display: grid; }
+
+header, main, aside, .infobox, footer {
+  padding: 2rem; }
+
+section.navbar {
+  display: flex; }
+
+header section.navbar nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+
+header section.navbar img {
+  width: 15rem;
+  margin-left: auto; }
 
 header {
   background-color: #262626; }
 
+body > div > header > img {
+  position: relative;
+  top: 30rem; }
+
 main {
+  padding-top: 30rem;
   background-color: #3e2f80;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
-aside, article {
+main h1 {
+  color: #fff2c9; }
+
+article.tutorialsteps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+article.tutorialsteps h3 {
+  margin: 0rem;
+  padding: 5rem; }
+
+aside, .infobox {
   background-color: #262626; }
+
+.infobox {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 footer {
   background-color: black; }
+
+.logobox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
 
 footer p {
   color: #fff2c9; }
 
 .buttonbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ff7bac;
-  width: 8rem;
-  height: 5rem; }
+  width: 50rem;
+  height: 30rem; }
