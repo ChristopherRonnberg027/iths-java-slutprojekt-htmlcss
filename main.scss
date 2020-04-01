@@ -1,5 +1,18 @@
-$colordarkpuple: rgb(62, 47, 128);
+@import 'colors';
 
 body {
+    background-color: $colorpink;
+}
+
+.grid-container{
+    display: grid;
+    
+}
+
+header {
+    background-color: $colorblack;
+}
+
+main {
     background-color: $colordarkpuple;
 }
