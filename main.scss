@@ -1,12 +1,30 @@
 @import 'colors';
+@import 'fonts';
+
+h1, h2, h3{
+    font-family: $fontdisplay;
+}
+
+img {
+    width: 100%;
+}
+
+header h1{
+    color: $colorwhite;
+}
+
+a {
+    font-family: $fontread;
+    color: $colorwhite;
+    text-decoration: underline;
+}
 
 body {
-    background-color: $colorpink;
+    max-width: 1128px;
 }
 
 .grid-container{
     display: grid;
-    
 }
 
 header {
@@ -15,4 +33,18 @@ header {
 
 main {
     background-color: $colordarkpuple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    background-color: $colorblack;
+}
+
+.buttonbox{
+    background-color: $colorpink;
+    width: 8rem;
+    height: 5rem;
 }

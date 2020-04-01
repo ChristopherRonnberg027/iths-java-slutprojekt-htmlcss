@@ -1,5 +1,21 @@
+/*'Space Mono'*/
+/*'Work Sans', sans-serif*/
+h1, h2, h3 {
+  font-family: "Helvetica"; }
+
+img {
+  width: 100%; }
+
+header h1 {
+  color: #fff2c9; }
+
+a {
+  font-family: "Helvetica";
+  color: #fff2c9;
+  text-decoration: underline; }
+
 body {
-  background-color: #ff7bac; }
+  max-width: 1128px; }
 
 .grid-container {
   display: grid; }
@@ -8,4 +24,16 @@ header {
   background-color: #262626; }
 
 main {
-  background-color: #3e2f80; }
+  background-color: #3e2f80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+aside {
+  background-color: #262626; }
+
+.buttonbox {
+  background-color: #ff7bac;
+  width: 8rem;
+  height: 5rem; }
