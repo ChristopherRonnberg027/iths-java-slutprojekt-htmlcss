@@ -1,7 +1,7 @@
 @import 'colors';
 @import 'fonts';
 
-h1, h2, h3{
+h1, h2, h3, p{
     font-family: $fontdisplay;
 }
 
@@ -10,13 +10,27 @@ img {
 }
 
 header h1{
+    margin: 0 auto;
     color: $colorwhite;
+    font-size: 4rem;
+}
+
+header h3{
+    text-align: center;
+    color: $colorwhite;
+    font-size: 2rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 a {
     font-family: $fontread;
     color: $colorwhite;
     text-decoration: underline;
+}
+
+.headertextbox2 {
+    padding:15rem;
 }
 
 body {
@@ -39,8 +53,16 @@ main {
     align-items: center;
 }
 
-aside {
+aside, article {
     background-color: $colorblack;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: $colorwhite;
 }
 
 .buttonbox{

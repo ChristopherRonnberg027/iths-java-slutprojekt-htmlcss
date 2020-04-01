@@ -1,18 +1,30 @@
 /*'Space Mono'*/
 /*'Work Sans', sans-serif*/
-h1, h2, h3 {
+h1, h2, h3, p {
   font-family: "Helvetica"; }
 
 img {
   width: 100%; }
 
 header h1 {
-  color: #fff2c9; }
+  margin: 0 auto;
+  color: #fff2c9;
+  font-size: 4rem; }
+
+header h3 {
+  text-align: center;
+  color: #fff2c9;
+  font-size: 2rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em; }
 
 a {
   font-family: "Helvetica";
   color: #fff2c9;
   text-decoration: underline; }
+
+.headertextbox2 {
+  padding: 15rem; }
 
 body {
   max-width: 1128px; }
@@ -30,8 +42,14 @@ main {
   justify-content: center;
   align-items: center; }
 
-aside {
+aside, article {
   background-color: #262626; }
+
+footer {
+  background-color: black; }
+
+footer p {
+  color: #fff2c9; }
 
 .buttonbox {
   background-color: #ff7bac;
