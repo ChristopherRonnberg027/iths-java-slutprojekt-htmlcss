@@ -21,28 +21,6 @@ img {
 header h1 {
   color: #fff2c9; }
 
-nav a {
-  margin: .9rem;
-  font-size: 1rem;
-  font-family: "Helvetica";
-  color: #fff2c9;
-  text-decoration: underline;
-  font-weight: 800; }
-
-.graphicobject {
-  display: flex;
-  justify-content: center;
-  align-self: center; }
-  .graphicobject img {
-    position: relative;
-    bottom: 20rem;
-    width: 40rem; }
-
-.headertextbox2 {
-  text-align: center;
-  padding: 7rem;
-  margin-top: 15rem; }
-
 .grid-container {
   margin: 0 auto;
   margin: 2rem;
@@ -64,6 +42,13 @@ header {
       flex-direction: column;
       justify-content: center;
       align-content: center; }
+      header section.navbar nav a {
+        margin: .9rem;
+        font-size: 2rem;
+        font-family: "Helvetica";
+        color: #fff2c9;
+        text-decoration: underline;
+        font-weight: 800; }
     header section.navbar img:nth-child(2) {
       width: 15rem;
       margin-left: auto; }
@@ -82,6 +67,10 @@ header {
       margin-block-end: 0rem;
       margin-inline-start: 0rem;
       margin-inline-end: 0rem; }
+  header .headertextbox2 {
+    text-align: center;
+    padding: 7rem;
+    margin-top: 15rem; }
   header section.artwork {
     margin: 0 auto;
     width: 50rem;
@@ -92,10 +81,18 @@ header {
       position: relative;
       top: 30rem;
       box-shadow: 1rem 1rem 0rem 0rem #ff7bac; }
+  header .graphicobject {
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+    header .graphicobject img {
+      position: relative;
+      bottom: 15rem;
+      width: 20rem; }
 
 main {
   grid-area: main;
-  padding-top: 50rem;
+  padding-top: 40rem;
   background-color: #a09db0;
   display: flex;
   flex-direction: column;
@@ -202,15 +199,44 @@ body > div > footer > img:nth-child(4) {
       flex-direction: row;
       justify-content: center;
       align-content: center; }
+      header section.navbar nav a {
+        font-size: 1rem; }
     header section.navbar img:nth-child(2) {
       display: none; }
     header section.navbar img:nth-child(3) {
       display: block;
       margin-left: auto;
-      width: 60rem; }
+      width: 30rem; }
   header h1 {
     position: relative;
     margin-right: 30rem; }
+  header .headertextbox1 {
+    position: relative;
+    z-index: +1;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column; }
+    header .headertextbox1 h1 {
+      margin-block-start: 0rem;
+      margin-block-end: 0rem;
+      margin-inline-start: 0rem;
+      margin-inline-end: 0rem; }
+  header .headertextbox2 {
+    text-align: center;
+    padding: 7rem;
+    margin-top: 1rem; }
+    header .headertextbox2 h3 {
+      font-size: 2rem; }
+  header .graphicobject {
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+    header .graphicobject img {
+      position: relative;
+      bottom: 15rem;
+      width: 15rem; }
   footer .logobox {
     display: grid;
     grid-template-columns: repeat(6, 1fr);

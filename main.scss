@@ -24,35 +24,6 @@ header h1{
     color: $colorwhite;
 }
 
-nav a {
-    margin: .9rem;
-    font-size: 1rem;
-    font-family: $fontread;
-    color: $colorwhite;
-    text-decoration: underline;
-    font-weight: 800;
-}
-
-
-.graphicobject{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    img {
-        position: relative;
-        bottom: 20rem;
-        width: 40rem;
-    }
-}
-
-.headertextbox2 {
-    text-align: center;
-    padding: 7rem;
-    margin-top: 15rem;
-}
-
-
-
 .grid-container{
     margin: 0 auto;
     margin: 2rem;
@@ -83,6 +54,15 @@ header {
             flex-direction: column;
             justify-content: center;
             align-content: center;
+
+            a {
+                margin: .9rem;
+                font-size: 2rem;
+                font-family: $fontread;
+                color: $colorwhite;
+                text-decoration: underline;
+                font-weight: 800;
+            }
         }
         img:nth-child(2) {
             width: 15rem;
@@ -108,8 +88,13 @@ header {
             margin-block-end: 0rem;
             margin-inline-start: 0rem;
             margin-inline-end: 0rem;
-        }
-    
+        }    
+    }
+
+    .headertextbox2 {
+        text-align: center;
+        padding: 7rem;
+        margin-top: 15rem;
     }
 
     section.artwork{
@@ -126,12 +111,23 @@ header {
         }
     }
 
+    .graphicobject{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        img {
+            position: relative;
+            bottom: 15rem;
+            width: 20rem;
+        }
+    }
+
 }
 
 
 main {
     grid-area: main;
-    padding-top: 50rem;
+    padding-top: 40rem;
     background-color: $colorgrey;
     display: flex;
     flex-direction: column;
@@ -141,22 +137,22 @@ main {
         color: $colorwhite;
     }
 
-.tutorialsteps {
-    margin: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h3 {
-        text-align: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
+    .tutorialsteps {
+        margin: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            text-align: center;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+        img {
+            padding:2rem;
+            width: 15rem;
+        }
     }
-    img {
-        padding:2rem;
-        width: 15rem;
-    }
-}
 
 
 
@@ -282,6 +278,10 @@ body > div > footer > img:nth-child(4){
                 flex-direction: row;
                 justify-content: center;
                 align-content: center;
+
+                a{
+                    font-size: 1rem;
+                }
             }
             img:nth-child(2) {
                 display: none;
@@ -291,13 +291,51 @@ body > div > footer > img:nth-child(4){
             img:nth-child(3) {
                 display: block;
                 margin-left: auto;
-                width: 60rem;
+                width: 30rem;
             }
         }
 
         h1 {
             position: relative;
             margin-right: 30rem;
+        }
+
+        .headertextbox1 {
+            position: relative;
+            z-index: +1;
+            padding-right: 2rem;
+            padding-top: 5rem;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            h1 {
+                margin-block-start: 0rem;
+                margin-block-end: 0rem;
+                margin-inline-start: 0rem;
+                margin-inline-end: 0rem;
+            }    
+        }
+
+        .headertextbox2 {
+            text-align: center;
+            padding: 7rem;
+            margin-top: 1rem;
+            
+
+            h3{
+                font-size: 2rem;
+            }
+        }
+
+        .graphicobject{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            img {
+                position: relative;
+                bottom: 15rem;
+                width: 15rem;
+            }
         }
  
     }
