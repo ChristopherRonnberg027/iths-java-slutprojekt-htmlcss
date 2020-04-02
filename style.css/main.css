@@ -8,12 +8,15 @@ h1 {
   font-kerning: -5px; }
 
 body {
-  margin: 0 auto;
-  min-width: 300px; }
+  max-width: 600px; }
+
+h1 {
+  font-size: 8em;
+  font-kerning: -5px; }
 
 h3 {
   color: #fff2c9;
-  font-size: 3rem;
+  font-size: 3em;
   margin-block-start: 0em;
   margin-block-end: 0em; }
 
@@ -25,7 +28,7 @@ header h1 {
 
 nav a {
   margin: .9rem;
-  font-size: 3rem;
+  font-size: 3em;
   font-family: "Helvetica";
   color: #fff2c9;
   text-decoration: underline;
@@ -37,172 +40,166 @@ nav a {
   align-self: center; }
   .graphicobject img {
     position: relative;
-    bottom: 20rem;
-    width: 40rem; }
+    bottom: 20em;
+    width: 40em; }
 
 .headertextbox2 {
   text-align: center;
-  padding: 7rem;
-  margin-top: 15rem; }
+  padding: 7em;
+  margin-top: 15em; }
 
 .grid-container {
-  margin: 2rem;
-  display: grid; }
-
-header, main, aside, .infobox, footer {
-  padding: 2rem; }
-
-header h3 {
-  font-size: 5rem; }
-
-header section.navbar {
-  display: flex; }
-  header section.navbar nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  header section.navbar img:nth-child(2) {
-    width: 15rem;
-    margin-left: auto; }
-  header section.navbar img:nth-child(3) {
-    display: none; }
-
-header .headertextbox1 {
-  position: relative;
-  z-index: +1;
-  padding-right: 2rem;
-  padding-top: 15rem;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column; }
-  header .headertextbox1 h1 {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0em;
-    margin-inline-end: 0em; }
-
-header section.artwork {
   margin: 0 auto;
-  width: 100rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  header section.artwork img {
-    position: relative;
-    top: 30rem;
-    box-shadow: 1rem 1rem 0rem 0rem #3e2f80; }
+  margin: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "main" "aside" "infobox" "footer";
+  padding: 2em; }
 
 header {
+  grid-area: header;
   background-color: #262626; }
+  header h3 {
+    font-size: 5em; }
+  header section.navbar {
+    display: flex; }
+    header section.navbar nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+    header section.navbar img:nth-child(2) {
+      width: 15em;
+      margin-left: auto; }
+    header section.navbar img:nth-child(3) {
+      display: none; }
+  header .headertextbox1 {
+    position: relative;
+    z-index: +1;
+    padding-right: 2em;
+    padding-top: 15em;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column; }
+    header .headertextbox1 h1 {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0em;
+      margin-inline-end: 0em; }
+  header section.artwork {
+    margin: 0 auto;
+    width: 100em;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header section.artwork img {
+      position: relative;
+      top: 30em;
+      box-shadow: 1em 1em 0em 0em #3e2f80; }
 
 main {
-  padding-top: 50rem;
+  grid-area: main;
+  padding-top: 50em;
   background-color: #a09db0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-main h1 {
-  color: #fff2c9; }
-
-.tutorialsteps {
-  margin: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .tutorialsteps h3 {
-    text-align: center;
-    padding-left: 4rem;
-    padding-right: 4rem; }
-  .tutorialsteps img {
-    padding: 2rem;
-    width: 15rem; }
+  main h1 {
+    color: #fff2c9; }
+  main .tutorialsteps {
+    margin: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .tutorialsteps h3 {
+      text-align: center;
+      padding-left: 4em;
+      padding-right: 4em; }
+    main .tutorialsteps img {
+      padding: 2em;
+      width: 15em; }
 
 aside, .infobox {
   background-color: #262626; }
 
-.infobox {
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 aside {
-  padding-top: 10rem;
+  padding-top: 10em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   aside h3:nth-child(2) {
-    padding-bottom: 5rem; }
+    padding-bottom: 5em; }
   aside h3:nth-child(4) {
-    padding-bottom: 5rem; }
+    padding-bottom: 5em; }
   aside .buttonbox {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ff7bac;
-    width: 60rem;
-    height: 30rem; }
+    width: 60em;
+    height: 30em; }
     aside .buttonbox button.testbtn {
       font: "Helvetica";
-      font-size: 3rem;
+      font-size: 3em;
       font-weight: 600;
       color: #fff2c9;
       background-color: #8674d4;
       border: none;
-      width: 20rem;
-      box-shadow: 0.5rem 0.5rem 0rem 0rem #fff2c9; }
+      width: 20em;
+      box-shadow: 0.5em 0.5em 0em 0em #fff2c9; }
 
 section.infobox {
-  padding: 15rem; }
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15em; }
   section.infobox h3 {
     text-align: center; }
   section.infobox h3:nth-child(3) {
-    padding-bottom: 5rem; }
+    padding-bottom: 5em; }
   section.infobox button.merinfobtn {
     font: "Helvetica";
-    font-size: 3rem;
+    font-size: rem;
     font-weight: 600;
     color: #262626;
     background-color: #fff2c9;
     border: none;
-    width: 20rem;
-    box-shadow: 0.5rem 0.5rem 0rem 0rem #8674d4; }
+    width: 20em;
+    box-shadow: 0.5em 0.5em 0em 0em #8674d4; }
 
 footer {
-  padding-top: 20rem;
+  padding-top: 20em;
   background-color: black; }
   footer .logobox {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 4em;
+    padding-right: 4em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 2rem; }
+    grid-gap: 2em; }
     footer .logobox img {
-      width: 10rem; }
+      width: 10em;
+      margin: 0 auto; }
   footer h3 {
     text-align: center;
     color: #fff2c9; }
 
 body > div > footer > img:nth-child(4) {
-  width: 50rem;
-  margin-right: auto; }
+  width: 50em;
+  padding: 3em; }
 
-@media screen and (min-width: 1125px) {
-  /*
-    body {
-         max-width: 100vw;
-    }
-    */
+@media only screen and (min-width: 600px) {
+  body {
+    max-width: 1000px; }
   header section.navbar {
-    padding-top: 5rem;
-    padding-left: 5rem;
+    padding-top: 5em;
+    padding-left: 5em;
     display: flex; }
     header section.navbar nav {
       text-align: center;
@@ -215,17 +212,17 @@ body > div > footer > img:nth-child(4) {
     header section.navbar img:nth-child(3) {
       display: block;
       margin-left: auto;
-      width: 60rem; }
+      width: 60em; }
   header h1 {
     position: relative;
-    margin-right: 30rem; }
+    margin-right: 30em; }
   header section.artwork img {
     margin: 0 auto;
     position: relative;
-    top: 30rem;
-    box-shadow: 1rem 1rem 0rem 0rem #3e2f80; }
+    top: 30em;
+    box-shadow: 1em 1em 0em 0em #3e2f80; }
   footer .logobox {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-gap: 3rem; } }
+    grid-gap: 3em; } }
