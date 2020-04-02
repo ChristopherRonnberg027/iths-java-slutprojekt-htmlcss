@@ -2,3 +2,11 @@ $fontdisplay: 'Helvetica';
 /*'Space Mono'*/
 $fontread: "Helvetica";
 /*'Work Sans', sans-serif*/
+
+h1, h2, h3, p{
+    font-family: $fontdisplay;
+}
+
+h1 {
+    font-size: 5rem;
+}

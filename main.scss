@@ -5,14 +5,6 @@ body {
     min-width: 1128px;
 }
 
-h1, h2, h3, p{
-    font-family: $fontdisplay;
-}
-
-h1 {
-    font-size: 5rem;
-}
-
 h3 {
     text-align: center;
     color: $colorwhite;
@@ -40,8 +32,15 @@ nav a {
 }
 
 
+.headertextbox1 {
+    margin-right: auto;
+}
+
+
 .headertextbox2 {
     padding:7rem;
+    
+    background-color: red;
 }
 
 
@@ -59,26 +58,32 @@ section.navbar {
     display: flex;
 }
 
-header section.navbar nav {
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+header {
+    section.navbar {
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        img {
+            width: 15rem;
+            margin-left: auto;
+        }
+    }
 }
 
-header section.navbar img {
-    width: 15rem;
-    margin-left: auto;
-}
+
 
 header {
     background-color: $colorblack;
 }
 
-body > div > header > img {
-    position: relative;
-    top: 30rem;
+header {
+        img {
+        position: relative;
+        top: 30rem;
+    }
 }
 
 main {
