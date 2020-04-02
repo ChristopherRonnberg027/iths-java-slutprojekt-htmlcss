@@ -194,3 +194,7 @@ footer {
   footer .graphicline {
     margin: 0 auto;
     width: 30rem; }
+
+@media screen and (min-width: 1400px) {
+  body {
+    background-color: green; } }
