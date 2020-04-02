@@ -1,16 +1,16 @@
 /*'Space Mono'*/
 /*'Work Sans', sans-serif*/
-body {
-  min-width: 1128px; }
-
 h1, h2, h3, p {
   font-family: "Helvetica"; }
 
 h1 {
-  font-size: 5rem; }
+  font-size: 7rem;
+  font-kerning: -5px; }
+
+body {
+  min-width: 1128px; }
 
 h3 {
-  text-align: center;
   color: #fff2c9;
   font-size: 3rem;
   margin-block-start: 0em;
@@ -20,7 +20,6 @@ img {
   width: 100%; }
 
 header h1 {
-  margin: 0 auto;
   color: #fff2c9; }
 
 nav a {
@@ -31,8 +30,32 @@ nav a {
   text-decoration: underline;
   font-weight: 800; }
 
+.headertextbox1 {
+  position: relative;
+  z-index: +1;
+  padding-top: 15rem;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column; }
+  .headertextbox1 h1 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em; }
+
+.graphicobject {
+  display: flex;
+  justify-content: center;
+  align-self: center; }
+  .graphicobject img {
+    position: relative;
+    bottom: 20rem;
+    width: 40rem; }
+
 .headertextbox2 {
-  padding: 7rem; }
+  text-align: center;
+  padding: 7rem;
+  margin-top: 15rem; }
 
 .grid-container {
   margin: 2rem;
@@ -59,11 +82,12 @@ header {
 
 body > div > header > img {
   position: relative;
-  top: 30rem; }
+  top: 30rem;
+  box-shadow: 1rem 1rem 0rem 0rem #3e2f80; }
 
 main {
   padding-top: 30rem;
-  background-color: #3e2f80;
+  background-color: #a09db0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,9 +102,15 @@ article.tutorialsteps {
   justify-content: center;
   align-items: center; }
 
-article.tutorialsteps h3 {
-  margin: 0rem;
-  padding: 5rem; }
+.tutorialsteps {
+  margin: 15rem; }
+  .tutorialsteps h3 {
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem; }
+  .tutorialsteps img {
+    padding: 2rem;
+    width: 10rem; }
 
 aside, .infobox {
   background-color: #262626; }
@@ -93,10 +123,31 @@ aside, .infobox {
   align-items: center; }
 
 aside {
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  aside h3:nth-child(2) {
+    padding-bottom: 5rem; }
+  aside h3:nth-child(4) {
+    padding-bottom: 5rem; }
+  aside .buttonbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7bac;
+    width: 50rem;
+    height: 30rem; }
+    aside .buttonbox button.testbtn {
+      font: "Helvetica";
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fff2c9;
+      background-color: #8674d4;
+      border: none;
+      width: 15rem;
+      box-shadow: 0.5rem 0.5rem 0rem 0rem #fff2c9; }
 
 footer {
   background-color: black; }
@@ -108,11 +159,3 @@ footer {
 
 footer p {
   color: #fff2c9; }
-
-.buttonbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff7bac;
-  width: 50rem;
-  height: 30rem; }
