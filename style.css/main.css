@@ -3,22 +3,17 @@
 h1, h2, h3, p {
   font-family: "Helvetica"; }
 
-h1 {
-  font-size: 8rem;
-  font-kerning: -5px; }
-
 body {
-  max-width: 600px; }
+  min-width: 600px; }
 
 h1 {
-  font-size: 8em;
-  font-kerning: -5px; }
+  font-size: 5rem; }
 
 h3 {
   color: #fff2c9;
-  font-size: 3em;
-  margin-block-start: 0em;
-  margin-block-end: 0em; }
+  font-size: 2rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem; }
 
 img {
   width: 100%; }
@@ -28,7 +23,7 @@ header h1 {
 
 nav a {
   margin: .9rem;
-  font-size: 3em;
+  font-size: 1rem;
   font-family: "Helvetica";
   color: #fff2c9;
   text-decoration: underline;
@@ -40,28 +35,28 @@ nav a {
   align-self: center; }
   .graphicobject img {
     position: relative;
-    bottom: 20em;
-    width: 40em; }
+    bottom: 20rem;
+    width: 40rem; }
 
 .headertextbox2 {
   text-align: center;
-  padding: 7em;
-  margin-top: 15em; }
+  padding: 7rem;
+  margin-top: 15rem; }
 
 .grid-container {
   margin: 0 auto;
-  margin: 2em;
+  margin: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "header" "main" "aside" "infobox" "footer";
-  padding: 2em; }
+  padding: 2rem; }
 
 header {
   grid-area: header;
   background-color: #262626; }
   header h3 {
-    font-size: 5em; }
+    font-size: 3rem; }
   header section.navbar {
     display: flex; }
     header section.navbar nav {
@@ -70,37 +65,37 @@ header {
       justify-content: center;
       align-content: center; }
     header section.navbar img:nth-child(2) {
-      width: 15em;
+      width: 15rem;
       margin-left: auto; }
     header section.navbar img:nth-child(3) {
       display: none; }
   header .headertextbox1 {
     position: relative;
     z-index: +1;
-    padding-right: 2em;
-    padding-top: 15em;
+    padding-right: 2rem;
+    padding-top: 15rem;
     display: flex;
     align-items: flex-end;
     flex-direction: column; }
     header .headertextbox1 h1 {
-      margin-block-start: 0em;
-      margin-block-end: 0em;
-      margin-inline-start: 0em;
-      margin-inline-end: 0em; }
+      margin-block-start: 0rem;
+      margin-block-end: 0rem;
+      margin-inline-start: 0rem;
+      margin-inline-end: 0rem; }
   header section.artwork {
     margin: 0 auto;
-    width: 100em;
+    width: 50rem;
     display: flex;
     justify-content: center;
     align-items: center; }
     header section.artwork img {
       position: relative;
-      top: 30em;
-      box-shadow: 1em 1em 0em 0em #3e2f80; }
+      top: 30rem;
+      box-shadow: 1rem 1rem 0rem 0rem #ff7bac; }
 
 main {
   grid-area: main;
-  padding-top: 50em;
+  padding-top: 50rem;
   background-color: #a09db0;
   display: flex;
   flex-direction: column;
@@ -109,48 +104,48 @@ main {
   main h1 {
     color: #fff2c9; }
   main .tutorialsteps {
-    margin: 10em;
+    margin: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
     main .tutorialsteps h3 {
       text-align: center;
-      padding-left: 4em;
-      padding-right: 4em; }
+      padding-left: 4rem;
+      padding-right: 4rem; }
     main .tutorialsteps img {
-      padding: 2em;
-      width: 15em; }
+      padding: 2rem;
+      width: 15rem; }
 
 aside, .infobox {
   background-color: #262626; }
 
 aside {
-  padding-top: 10em;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   aside h3:nth-child(2) {
-    padding-bottom: 5em; }
+    padding-bottom: 5rem; }
   aside h3:nth-child(4) {
-    padding-bottom: 5em; }
+    padding-bottom: 5rem; }
   aside .buttonbox {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ff7bac;
-    width: 60em;
-    height: 30em; }
+    width: 60rem;
+    height: 30rem; }
     aside .buttonbox button.testbtn {
       font: "Helvetica";
-      font-size: 3em;
+      font-size: 3rem;
       font-weight: 600;
       color: #fff2c9;
       background-color: #8674d4;
       border: none;
-      width: 20em;
-      box-shadow: 0.5em 0.5em 0em 0em #fff2c9; }
+      width: 20rem;
+      box-shadow: 0.5rem 0.5rem 0rem 0rem #fff2c9; }
 
 section.infobox {
   height: 20em;
@@ -165,41 +160,41 @@ section.infobox {
     padding-bottom: 5em; }
   section.infobox button.merinfobtn {
     font: "Helvetica";
-    font-size: rem;
+    font-size: 3rem;
     font-weight: 600;
     color: #262626;
     background-color: #fff2c9;
     border: none;
-    width: 20em;
-    box-shadow: 0.5em 0.5em 0em 0em #8674d4; }
+    width: 20rem;
+    box-shadow: 0.5rem 0.5rem 0rem 0rem #8674d4; }
 
 footer {
-  padding-top: 20em;
+  padding-top: 20rem;
   background-color: black; }
   footer .logobox {
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 4rem;
+    padding-right: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 2em; }
+    grid-gap: 2rem; }
     footer .logobox img {
-      width: 10em;
+      width: 10rem;
       margin: 0 auto; }
   footer h3 {
     text-align: center;
     color: #fff2c9; }
 
 body > div > footer > img:nth-child(4) {
-  width: 50em;
-  padding: 3em; }
+  width: 50rem;
+  padding: 3rem; }
 
 @media only screen and (min-width: 600px) {
   body {
-    max-width: 1000px; }
+    min-width: 1000px; }
   header section.navbar {
-    padding-top: 5em;
-    padding-left: 5em;
+    padding-top: 5rem;
+    padding-left: 5rem;
     display: flex; }
     header section.navbar nav {
       text-align: center;
@@ -212,17 +207,12 @@ body > div > footer > img:nth-child(4) {
     header section.navbar img:nth-child(3) {
       display: block;
       margin-left: auto;
-      width: 60em; }
+      width: 60rem; }
   header h1 {
     position: relative;
-    margin-right: 30em; }
-  header section.artwork img {
-    margin: 0 auto;
-    position: relative;
-    top: 30em;
-    box-shadow: 1em 1em 0em 0em #3e2f80; }
+    margin-right: 30rem; }
   footer .logobox {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-gap: 3em; } }
+    grid-gap: 3rem; } }

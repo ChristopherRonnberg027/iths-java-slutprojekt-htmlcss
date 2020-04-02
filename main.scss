@@ -2,19 +2,18 @@
 @import 'fonts';
 
 body {
-    max-width: 600px;
+    min-width: 600px;
 }
 
 h1 {
-    font-size: 8em;
-    font-kerning: -5px;
+    font-size: 5rem;
 }
 
 h3 {
     color: $colorwhite;
-    font-size: 3em;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    font-size: 2rem;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
 }
 
 img {
@@ -27,7 +26,7 @@ header h1{
 
 nav a {
     margin: .9rem;
-    font-size: 3em;
+    font-size: 1rem;
     font-family: $fontread;
     color: $colorwhite;
     text-decoration: underline;
@@ -41,23 +40,22 @@ nav a {
     align-self: center;
     img {
         position: relative;
-        bottom: 20em;
-        width: 40em;
+        bottom: 20rem;
+        width: 40rem;
     }
 }
 
 .headertextbox2 {
     text-align: center;
-    padding: 7em;
-    margin-top: 15em;
+    padding: 7rem;
+    margin-top: 15rem;
 }
 
 
 
 .grid-container{
-    
     margin: 0 auto;
-    margin: 2em;
+    margin: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -67,7 +65,7 @@ nav a {
     "aside"
     "infobox"
     "footer";
-    padding: 2em;
+    padding: 2rem;
 }
 
 
@@ -76,7 +74,7 @@ header {
     grid-area: header;
     background-color: $colorblack;
     h3 {
-        font-size: 5em;
+        font-size: 3rem;
     }
     section.navbar {
         display: flex;
@@ -87,7 +85,7 @@ header {
             align-content: center;
         }
         img:nth-child(2) {
-            width: 15em;
+            width: 15rem;
             margin-left: auto;
         }
 
@@ -100,31 +98,31 @@ header {
     .headertextbox1 {
         position: relative;
         z-index: +1;
-        padding-right: 2em;
-        padding-top: 15em;
+        padding-right: 2rem;
+        padding-top: 15rem;
         display: flex;
         align-items: flex-end;
         flex-direction: column;
         h1 {
-            margin-block-start: 0em;
-            margin-block-end: 0em;
-            margin-inline-start: 0em;
-            margin-inline-end: 0em;
+            margin-block-start: 0rem;
+            margin-block-end: 0rem;
+            margin-inline-start: 0rem;
+            margin-inline-end: 0rem;
         }
     
     }
 
     section.artwork{
         margin: 0 auto;
-        width: 100em;
+        width: 50rem;
         display: flex;
         justify-content: center;
         align-items: center;
 
         img{
             position: relative;
-            top: 30em;
-            box-shadow: 1em 1em 0em 0em $colordarkpuple;
+            top: 30rem;
+            box-shadow: 1rem 1rem 0rem 0rem rgb(255, 123, 172);
         }
     }
 
@@ -133,7 +131,7 @@ header {
 
 main {
     grid-area: main;
-    padding-top: 50em;
+    padding-top: 50rem;
     background-color: $colorgrey;
     display: flex;
     flex-direction: column;
@@ -144,19 +142,19 @@ main {
     }
 
 .tutorialsteps {
-    margin: 10em;
+    margin: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h3 {
         text-align: center;
-        padding-left: 4em;
-        padding-right: 4em;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
     img {
-        padding:2em;
-        width: 15em;
+        padding:2rem;
+        width: 15rem;
     }
 }
 
@@ -169,18 +167,18 @@ aside, .infobox {
 }
 
 aside {
-    padding-top: 10em;
+    padding-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     h3:nth-child(2) {
-        padding-bottom: 5em;
+        padding-bottom: 5rem;
     }
 
     h3:nth-child(4) {
-        padding-bottom: 5em;
+        padding-bottom: 5rem;
     }
 
     .buttonbox{
@@ -189,18 +187,18 @@ aside {
         align-items: center;
     
         background-color: $colorpink;
-        width: 60em;
-        height: 30em;
+        width: 60rem;
+        height: 30rem;
 
         button.testbtn{
             font: $fontread;
-            font-size: 3em;
+            font-size: 3rem;
             font-weight: 600;
             color: $colorwhite;
             background-color: $colorregularpurple;
             border: none;
-            width: 20em;
-            box-shadow: 0.5em 0.5em 0em 0em $colorwhite;
+            width: 20rem;
+            box-shadow: 0.5rem 0.5rem 0rem 0rem $colorwhite;
         }
     }
 
@@ -222,30 +220,30 @@ section.infobox {
 
     button.merinfobtn{
         font: $fontread;
-        font-size: rem;
+        font-size: 3rem;
         font-weight: 600;
         color: $colorblack;
         background-color: $colorwhite;
         border: none;
-        width: 20em;
-        box-shadow: 0.5em 0.5em 0em 0em $colorregularpurple;
+        width: 20rem;
+        box-shadow: 0.5rem 0.5rem 0rem 0rem $colorregularpurple;
     }
 }
 
 footer {
-    padding-top: 20em;
+    padding-top: 20rem;
     background-color: black;
 
     .logobox{
-        padding-left: 4em;
-        padding-right: 4em;
+        padding-left: 4rem;
+        padding-right: 4rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 2em;
+        grid-gap: 2rem;
 
         img{
-            width: 10em;
+            width: 10rem;
             margin: 0 auto;
         }
     }
@@ -258,8 +256,8 @@ footer {
 }
 
 body > div > footer > img:nth-child(4){
-    width: 50em;
-    padding: 3em;
+    width: 50rem;
+    padding: 3rem;
 }
 
 
@@ -269,14 +267,14 @@ body > div > footer > img:nth-child(4){
 
 
    body {
-        max-width: 1000px;
+        min-width: 1000px;
     }
 
     header {
 
         section.navbar {
-            padding-top: 5em;
-            padding-left: 5em;
+            padding-top: 5rem;
+            padding-left: 5rem;
             display: flex;
             nav {
                 text-align: center;
@@ -293,22 +291,14 @@ body > div > footer > img:nth-child(4){
             img:nth-child(3) {
                 display: block;
                 margin-left: auto;
-                width: 60em;
+                width: 60rem;
             }
         }
 
         h1 {
             position: relative;
-            margin-right: 30em;
+            margin-right: 30rem;
         }
-        section.artwork {
-                img{
-                    margin: 0 auto;
-                    position: relative;
-                    top: 30em;
-                    box-shadow: 1em 1em 0em 0em $colordarkpuple;
-                }
-            }
  
     }
 
@@ -317,7 +307,7 @@ body > div > footer > img:nth-child(4){
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(1, 1fr);
-            grid-gap: 3em;
+            grid-gap: 3rem;
 
         }
     }
