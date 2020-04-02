@@ -3,11 +3,14 @@
 h1, h2, h3, p {
   font-family: "Helvetica"; }
 
-body {
-  min-width: 600px; }
+h1 {
+  font-size: 4rem; }
 
 h1 {
-  font-size: 5rem; }
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  margin-inline-start: 0rem;
+  margin-inline-end: 0rem; }
 
 h3 {
   color: #fff2c9;
@@ -15,28 +18,24 @@ h3 {
   margin-block-start: 0rem;
   margin-block-end: 0rem; }
 
+body {
+  min-width: 700px; }
+
 img {
   width: 100%; }
-
-header h1 {
-  color: #fff2c9; }
 
 .grid-container {
   margin: 0 auto;
   margin: 2rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "header" "main" "aside" "infobox" "footer";
   padding: 2rem; }
 
 header {
-  grid-area: header;
   background-color: #262626; }
-  header h3 {
-    font-size: 3rem; }
+  header h1 {
+    color: #fff2c9; }
   header section.navbar {
-    display: flex; }
+    display: flex;
+    padding: 2rem; }
     header section.navbar nav {
       display: flex;
       flex-direction: column;
@@ -44,7 +43,7 @@ header {
       align-content: center; }
       header section.navbar nav a {
         margin: .9rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: "Helvetica";
         color: #fff2c9;
         text-decoration: underline;
@@ -58,41 +57,41 @@ header {
     position: relative;
     z-index: +1;
     padding-right: 2rem;
-    padding-top: 15rem;
+    padding-top: 5rem;
     display: flex;
     align-items: flex-end;
     flex-direction: column; }
-    header .headertextbox1 h1 {
-      margin-block-start: 0rem;
-      margin-block-end: 0rem;
-      margin-inline-start: 0rem;
-      margin-inline-end: 0rem; }
-  header .headertextbox2 {
-    text-align: center;
-    padding: 7rem;
-    margin-top: 15rem; }
-  header section.artwork {
-    margin: 0 auto;
-    width: 50rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    header section.artwork img {
-      position: relative;
-      top: 30rem;
-      box-shadow: 1rem 1rem 0rem 0rem #ff7bac; }
   header .graphicobject {
     display: flex;
-    justify-content: center;
-    align-self: center; }
+    justify-content: center; }
     header .graphicobject img {
       position: relative;
       bottom: 15rem;
       width: 20rem; }
+  header .headertextbox2 {
+    margin-left: auto;
+    margin-right: auto; }
+    header .headertextbox2 h3 {
+      text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem; }
+  header section.artwork {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header section.artwork svg {
+      position: relative;
+      top: 10rem;
+      box-shadow: 1rem 1rem 0rem 0rem #3e2f80;
+      width: 20rem;
+      height: 20rem; }
+      header section.artwork svg .cls-1 {
+        fill: #ff7bac; }
 
 main {
   grid-area: main;
-  padding-top: 40rem;
+  padding-top: 15rem;
   background-color: #a09db0;
   display: flex;
   flex-direction: column;
@@ -101,18 +100,20 @@ main {
   main h1 {
     color: #fff2c9; }
   main .tutorialsteps {
-    margin: 10rem;
+    margin-top: 5rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
     main .tutorialsteps h3 {
-      text-align: center;
-      padding-left: 4rem;
-      padding-right: 4rem; }
-    main .tutorialsteps img {
+      text-align: center; }
+    main .tutorialsteps picture {
       padding: 2rem;
       width: 15rem; }
+  main .graphicobjects {
+    margin: 0 auto;
+    width: 50rem; }
 
 aside, .infobox {
   background-color: #262626; }
@@ -131,30 +132,31 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff7bac;
-    width: 60rem;
-    height: 30rem; }
+    background-color: #ff7bac; }
     aside .buttonbox button.testbtn {
+      margin: 8rem;
       font: "Helvetica";
       font-size: 3rem;
       font-weight: 600;
       color: #fff2c9;
       background-color: #8674d4;
       border: none;
-      width: 20rem;
+      width: 18rem;
       box-shadow: 0.5rem 0.5rem 0rem 0rem #fff2c9; }
 
 section.infobox {
-  height: 20em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15em; }
+  padding-left: 2rem;
+  padding-right: 2rem; }
   section.infobox h3 {
     text-align: center; }
+  section.infobox h3:nth-child(1) {
+    padding-top: 10rem; }
   section.infobox h3:nth-child(3) {
-    padding-bottom: 5em; }
+    padding-bottom: 2rem; }
   section.infobox button.merinfobtn {
     font: "Helvetica";
     font-size: 3rem;
@@ -163,82 +165,32 @@ section.infobox {
     background-color: #fff2c9;
     border: none;
     width: 20rem;
-    box-shadow: 0.5rem 0.5rem 0rem 0rem #8674d4; }
+    box-shadow: 0.5rem 0.5rem 0rem 0rem #8674d4;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 10rem; }
 
 footer {
-  padding-top: 20rem;
+  padding-top: 10rem;
   background-color: black; }
   footer .logobox {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 2rem; }
+    grid-gap: 1rem; }
     footer .logobox img {
-      width: 10rem;
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 8rem; }
   footer h3 {
     text-align: center;
     color: #fff2c9; }
-
-body > div > footer > img:nth-child(4) {
-  width: 50rem;
-  padding: 3rem; }
-
-@media only screen and (min-width: 600px) {
-  body {
-    min-width: 1000px; }
-  header section.navbar {
-    padding-top: 5rem;
-    padding-left: 5rem;
-    display: flex; }
-    header section.navbar nav {
-      text-align: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-content: center; }
-      header section.navbar nav a {
-        font-size: 1rem; }
-    header section.navbar img:nth-child(2) {
-      display: none; }
-    header section.navbar img:nth-child(3) {
-      display: block;
-      margin-left: auto;
+  footer picture {
+    height: auto; }
+    footer picture img {
       width: 30rem; }
-  header h1 {
-    position: relative;
-    margin-right: 30rem; }
-  header .headertextbox1 {
-    position: relative;
-    z-index: +1;
-    padding-right: 2rem;
-    padding-top: 5rem;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column; }
-    header .headertextbox1 h1 {
-      margin-block-start: 0rem;
-      margin-block-end: 0rem;
-      margin-inline-start: 0rem;
-      margin-inline-end: 0rem; }
-  header .headertextbox2 {
-    text-align: center;
-    padding: 7rem;
-    margin-top: 1rem; }
-    header .headertextbox2 h3 {
-      font-size: 2rem; }
-  header .graphicobject {
-    display: flex;
-    justify-content: center;
-    align-self: center; }
-    header .graphicobject img {
-      position: relative;
-      bottom: 15rem;
-      width: 15rem; }
-  footer .logobox {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 3rem; } }
+  footer .graphicline {
+    margin: 0 auto;
+    width: 30rem; }
