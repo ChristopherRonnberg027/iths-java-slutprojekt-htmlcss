@@ -15,8 +15,7 @@ h3{
 }
 
 p {
-
-    font-size: 3em;
+    font-size: 1.7em;
 }
 
 
@@ -176,6 +175,7 @@ aside {
     h3{
         text-align: center;
         max-width: 15em;
+        line-height: 1.2em;
     }
 
 
@@ -198,8 +198,8 @@ aside {
             box-shadow: 0.5rem 0.5rem 0rem 0rem $colorwhite;
 
             p {
-                font-weight: 600;
-                color: $colorwhite;
+                font-weight: 700;
+                text-transform: uppercase;
             }
         }
     }
@@ -211,35 +211,42 @@ section.infobox {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5em;
+
     h3{
         text-align: center;
-    }
-    h3:nth-child(1){
-        padding-top: 10rem;
-    }
-    h3:nth-child(3) {
-        padding-bottom: 2rem;
+        max-width: 15em;
+        line-height: 1.2em;
     }
 
     button.merinfobtn{
-        font: $fontread;
-        font-size: 3rem;
-        font-weight: 600;
-        color: $colorblack;
         background-color: $colorwhite;
         border: none;
-        width: 20rem;
         box-shadow: 0.5rem 0.5rem 0rem 0rem $colorregularpurple;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        margin-top: 4rem;
-        margin-bottom: 10rem; 
+        margin: 5em;
+        padding: 1em 3em;
+
+        p {
+            font-weight: 700;
+            color: $colorblack;
+            text-transform: uppercase;
+        }
     }
 }
 
 footer {
-    padding-top: 10rem;
+    padding: 3em 2em;
     background-color: black;
+
+    .textandgraphics{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    .graphicline{
+        margin: 0 auto;
+        width: 30rem;
+    }
+
+    }
 
     .logobox{
         padding-left: 2rem;
@@ -255,21 +262,11 @@ footer {
         }
     }
 
-    h3 {
-        text-align: center;
-        color: $colorwhite;
-    }
-
   
     img {
             width: 30rem;
     }
    
-
-    .graphicline{
-        margin: 0 auto;
-        width: 30rem;
-    }
 
 
 
