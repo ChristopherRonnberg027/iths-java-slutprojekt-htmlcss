@@ -36,6 +36,8 @@ img {
   margin: 0 auto; }
 
 header {
+  background-image: url("/img/flowers1-small.png");
+  background-size: cover;
   padding-top: 1em;
   padding: 1.5em; }
   header h1 {
@@ -81,7 +83,8 @@ header {
   header h3 {
     margin: 0 auto;
     max-width: 80%;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 5em; }
   header section.artwork {
     margin: 5em auto;
     display: flex;
@@ -101,7 +104,11 @@ main {
   justify-content: center;
   align-items: center; }
   main h1 {
-    text-align: center; }
+    width: 8em;
+    text-align: center;
+    background-color: #fff2c9;
+    color: #262626;
+    box-shadow: 0.2em 0.2em 0em 0em #8674d4; }
   main .tutorialsteps {
     width: 60%;
     background-color: #fff2c9;
