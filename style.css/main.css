@@ -10,7 +10,7 @@ h3 {
   margin: 0; }
 
 body {
-  /*min-width: 920px;*/ }
+  min-width: 920px; }
 
 h1 {
   color: #fff2c9;
