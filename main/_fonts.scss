@@ -1,0 +1,16 @@
+$fontdisplay: 'Helvetica';
+/*'Space Mono'*/
+$fontread: "Helvetica";
+/*'Work Sans', sans-serif*/
+
+h1, h2, h3, p, a{
+    font-family: $fontdisplay;
+}
+
+h1 {
+margin: 0;
+}
+
+h3 {
+margin: 0 ;
+}

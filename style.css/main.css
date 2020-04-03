@@ -1,156 +1,162 @@
 /*'Space Mono'*/
 /*'Work Sans', sans-serif*/
-h1, h2, h3, p {
+h1, h2, h3, p, a {
   font-family: "Helvetica"; }
 
 h1 {
-  font-size: 4rem; }
-
-h1 {
-  margin-block-start: 0rem;
-  margin-block-end: 0rem;
-  margin-inline-start: 0rem;
-  margin-inline-end: 0rem; }
+  margin: 0; }
 
 h3 {
-  color: #fff2c9;
-  font-size: 2rem;
-  margin-block-start: 0rem;
-  margin-block-end: 0rem; }
+  margin: 0; }
 
 body {
-  min-width: 700px; }
+  /*min-width: 920px;*/ }
+
+h1 {
+  color: red;
+  font-size: 4em; }
+
+h3 {
+  font-size: 2em; }
+
+p {
+  font-size: 3em; }
+
+h1, h2, h3, p {
+  color: red; }
 
 img {
   width: 100%; }
 
 .grid-container {
+  background-color: #262626;
   margin: 0 auto;
   margin: 2rem;
   padding: 2rem; }
 
-header {
-  background-color: #262626; }
-  header h1 {
-    color: #fff2c9; }
-  header section.navbar {
-    display: flex;
-    padding: 2rem; }
-    header section.navbar nav {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center; }
-      header section.navbar nav a {
-        margin: .9rem;
-        font-size: 1.5rem;
-        font-family: "Helvetica";
-        color: #fff2c9;
-        text-decoration: underline;
-        font-weight: 800; }
-    header section.navbar img:nth-child(2) {
-      width: 15rem;
-      margin-left: auto; }
-    header section.navbar img:nth-child(3) {
-      display: none; }
-  header .headertextbox1 {
+header h1 {
+  margin-top: 2em;
+  width: 70%;
+  text-align: right; }
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    header nav ul li a {
+      font-size: 1.5em;
+      color: red;
+      text-decoration-line: none;
+      font-weight: 800;
+      margin: 1em; }
+  header nav img:nth-child(2) {
+    width: 8em;
+    margin-left: auto; }
+  header nav img:nth-child(3) {
+    display: none; }
+
+header .headertextbox1 {
+  position: relative;
+  z-index: +1;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column; }
+
+header .graphicobject {
+  display: flex;
+  justify-content: center; }
+  header .graphicobject .squarebox {
     position: relative;
-    z-index: +1;
-    padding-right: 2rem;
-    padding-top: 5rem;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column; }
-  header .graphicobject {
-    display: flex;
-    justify-content: center; }
-    header .graphicobject img {
-      position: relative;
-      bottom: 15rem;
-      width: 20rem; }
-  header .headertextbox2 {
-    margin-left: auto;
-    margin-right: auto; }
-    header .headertextbox2 h3 {
-      text-align: center;
-      padding-left: 1rem;
-      padding-right: 1rem; }
-  header section.artwork {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    header section.artwork svg {
-      position: relative;
-      top: 10rem;
-      box-shadow: 1rem 1rem 0rem 0rem #3e2f80;
-      width: 20rem;
-      height: 20rem; }
-      header section.artwork svg .cls-1 {
-        fill: #ff7bac; }
+    bottom: 15em;
+    background-color: #3e2f80;
+    width: 20em;
+    height: 20em; }
+
+header h3 {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center; }
+
+header section.artwork {
+  margin: 5em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header section.artwork svg {
+    box-shadow: 1rem 1rem 0rem 0rem #3e2f80;
+    width: 30rem;
+    height: 30rem; }
+    header section.artwork svg .cls-1 {
+      fill: #a09db0; }
 
 main {
-  grid-area: main;
-  padding-top: 15rem;
-  background-color: #a09db0;
+  padding-top: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   main h1 {
-    color: #fff2c9; }
+    text-align: center; }
   main .tutorialsteps {
-    margin-top: 5rem;
-    padding: 3rem;
+    width: 60%;
+    background-color: #a09db0;
+    margin: 5em auto;
+    padding: 4em 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    box-shadow: 1rem 1rem 0rem 0rem #ff7bac; }
     main .tutorialsteps h3 {
       text-align: center; }
-    main .tutorialsteps picture {
-      padding: 2rem;
-      width: 15rem; }
+    main .tutorialsteps svg {
+      padding: 2em;
+      width: 15em;
+      filter: drop-shadow(10px 10px 0px #ff7bac); }
+      main .tutorialsteps svg .cls-1 {
+        fill: #3e2f80; }
   main .graphicobjects {
-    margin: 0 auto;
-    width: 50rem; }
-
-aside, .infobox {
-  background-color: #262626; }
+    margin: 2em auto;
+    max-width: 50em; }
 
 aside {
-  padding-top: 10rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  aside h3:nth-child(2) {
-    padding-bottom: 5rem; }
-  aside h3:nth-child(4) {
-    padding-bottom: 5rem; }
+  aside h3 {
+    text-align: center;
+    max-width: 15em; }
   aside .buttonbox {
+    margin: 5em auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    height: 30em;
     background-color: #ff7bac; }
     aside .buttonbox button.testbtn {
-      margin: 8rem;
-      font: "Helvetica";
-      font-size: 3rem;
-      font-weight: 600;
-      color: #fff2c9;
+      margin: 4em;
       background-color: #8674d4;
       border: none;
       width: 18rem;
-      box-shadow: 0.5rem 0.5rem 0rem 0rem #fff2c9; }
+      box-shadow: 0.5rem 0.5rem 0rem 0rem red; }
+      aside .buttonbox button.testbtn p {
+        font-weight: 600;
+        color: red; }
 
 section.infobox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem; }
+  align-items: center; }
   section.infobox h3 {
     text-align: center; }
   section.infobox h3:nth-child(1) {
@@ -162,7 +168,7 @@ section.infobox {
     font-size: 3rem;
     font-weight: 600;
     color: #262626;
-    background-color: #fff2c9;
+    background-color: red;
     border: none;
     width: 20rem;
     box-shadow: 0.5rem 0.5rem 0rem 0rem #8674d4;
@@ -186,11 +192,9 @@ footer {
       width: 8rem; }
   footer h3 {
     text-align: center;
-    color: #fff2c9; }
-  footer picture {
-    height: auto; }
-    footer picture img {
-      width: 30rem; }
+    color: red; }
+  footer img {
+    width: 30rem; }
   footer .graphicline {
     margin: 0 auto;
     width: 30rem; }

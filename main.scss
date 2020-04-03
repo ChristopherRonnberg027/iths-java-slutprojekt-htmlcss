@@ -1,15 +1,37 @@
-@import 'colors';
-@import 'fonts';
+@import 'main/colors';
+@import 'main/fonts';
 
 body {
-    min-width: 700px;
+    /*min-width: 920px;*/
 }
+
+h1{
+    color: $colorwhite;
+    font-size: 4em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p {
+
+    font-size: 3em;
+}
+
+
+h1, h2, h3, p{
+    color: $colorwhite;
+}
+
+
 
 img {
     width: 100%;
 }
 
 .grid-container{
+    background-color: $colorblack;
     margin: 0 auto;
     margin: 2rem;
     padding: 2rem;
@@ -17,36 +39,36 @@ img {
 
 
 header {
-    background-color: $colorblack;
-    
-    h1{
-        color: $colorwhite;
+
+    h1 {
+        margin-top: 2em;
+        width: 70%;
+        text-align: right;
     }
 
-    section.navbar {
-        display: flex;
-        padding: 2rem;
-        nav {
+    nav {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-content: center;
-            
-            a {
-                margin: .9rem;
-                font-size: 1.5rem;
-                font-family: $fontread;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li a {
+                font-size: 1.5em;
                 color: $colorwhite;
-                text-decoration: underline;
+                text-decoration-line: none;
                 font-weight: 800;
+                margin: 1em;
+                
             }
         }
         img:nth-child(2) {
-            width: 15rem;
+            width: 8em;
             margin-left: auto;
         }
 
-        img:nth-child(3){
+        img:nth-child(3) {
             display: none;
         }
 
@@ -66,36 +88,33 @@ header {
     .graphicobject{
         display: flex;
         justify-content: center;
-        img {
+
+        .squarebox {
             position: relative;
-            bottom: 15rem;
-            width: 20rem;
+            bottom: 15em;
+            background-color: $colordarkpuple;
+            width: 20em;
+            height: 20em;
         }
     }
 
-    .headertextbox2 {
-            margin-left: auto;
-            margin-right: auto;
-        h3 {
-            text-align: center;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+    h3 {
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
     }
 
     section.artwork{
-        margin: 0 auto;
+        margin: 5em auto;
         display: flex;
         justify-content: center;
         align-items: center;
         svg {
-            position: relative;
-            top: 10rem;
             box-shadow: 1rem 1rem 0rem 0rem $colordarkpuple;
-            width: 20rem;
-            height: 20rem;
+            width: 30rem;
+            height: 30rem;
             .cls-1{
-                fill: $colorpink;
+                fill: $colorgrey;
             }
         }
     }
@@ -104,78 +123,84 @@ header {
 
 
 main {
-    grid-area: main;
-    padding-top: 15rem;
-    background-color: $colorgrey;
+    padding-top: 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     h1 {
-        color: $colorwhite;
+        text-align: center;
     }
+ 
 
     .tutorialsteps {
-        margin-top: 5rem;
-        padding: 3rem;
+        width: 60%;
+        background-color: $colorgrey;
+        margin: 5em auto;
+        padding: 4em 2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-shadow: 1rem 1rem 0rem 0rem $colorpink;
+
         h3 {
             text-align: center;
         }
-        picture {
-            padding:2rem;
-            width: 15rem;
-
+        svg {
+            padding:2em;
+            width: 15em;
+            filter: drop-shadow(10px 10px 0px $colorpink);
+            .cls-1{
+                fill: $colordarkpuple;
+            }
         }
     }
 
     .graphicobjects{
-        margin: 0 auto;
-        width: 50rem;
+        margin: 2em auto;
+        max-width: 50em;
     }
 
 
-
-}
-
-aside, .infobox {
-    background-color: $colorblack;
 }
 
 aside {
-    padding-top: 10rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    h3:nth-child(2) {
-        padding-bottom: 5rem;
+    h3{
+        text-align: center;
+        max-width: 15em;
     }
 
-    h3:nth-child(4) {
-        padding-bottom: 5rem;
-    }
+
 
     .buttonbox{
+        margin: 5em auto;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 80%;
+        height: 30em;
         background-color: $colorpink;
 
         button.testbtn{
-            margin: 8rem;
-            font: $fontread;
-            font-size: 3rem;
-            font-weight: 600;
-            color: $colorwhite;
+            margin: 4em;
+            
             background-color: $colorregularpurple;
             border: none;
             width: 18rem;
             box-shadow: 0.5rem 0.5rem 0rem 0rem $colorwhite;
+
+            p {
+                font-weight: 600;
+                color: $colorwhite;
+            }
         }
     }
 
@@ -186,8 +211,6 @@ section.infobox {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
     h3{
         text-align: center;
     }
@@ -237,12 +260,11 @@ footer {
         color: $colorwhite;
     }
 
-    picture {
-        height: auto;
-        img {
+  
+    img {
             width: 30rem;
-        }
     }
+   
 
     .graphicline{
         margin: 0 auto;
