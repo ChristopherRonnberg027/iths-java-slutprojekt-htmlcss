@@ -105,8 +105,8 @@ main {
   main .tutorialsteps {
     width: 60%;
     background-color: #fff2c9;
-    margin: 1em 2em 2em auto;
-    padding: 4em 2em;
+    margin: 1em 2em;
+    padding: 2em 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +116,7 @@ main {
       text-align: center;
       color: #262626; }
     main .tutorialsteps svg {
-      padding: 2em;
+      padding: 1em;
       width: 5em;
       /*filter: drop-shadow(10px 10px 0px $colorpink);*/ }
       main .tutorialsteps svg .cls-1 {

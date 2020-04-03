@@ -137,8 +137,8 @@ main {
     .tutorialsteps {
         width: 60%;
         background-color: $colorwhite;
-        margin: 1em 2em 2em auto;
-        padding: 4em 2em;
+        margin: 1em 2em;
+        padding: 2em 2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -151,7 +151,7 @@ main {
         }
 
         svg {
-            padding:2em;
+            padding:1em;
             width: 5em;
             /*filter: drop-shadow(10px 10px 0px $colorpink);*/
             .cls-1{
