@@ -3,24 +3,27 @@
 h1, h2, h3, p {
   font-family: "Helvetica"; }
 
-h1 {
+p, a {
+  font-family: "Helvetica"; }
+
+h1, h2, h3, p, a {
   margin: 0; }
 
 h3 {
   margin: 0; }
 
 body {
-  min-width: 920px; }
+  min-width: 375px; }
 
 h1 {
   color: #fff2c9;
-  font-size: 4em; }
-
-h3 {
   font-size: 2em; }
 
+h3 {
+  font-size: 1em; }
+
 p {
-  font-size: 1.7em; }
+  font-size: 1em; }
 
 h1, h2, h3, p {
   color: #fff2c9; }
@@ -30,73 +33,69 @@ img {
 
 .grid-container {
   background-color: #262626;
-  margin: 0 auto;
-  margin: 2rem;
-  padding: 2rem; }
+  margin: 0 auto; }
 
-header h1 {
-  margin-top: 2em;
-  width: 70%;
-  text-align: right; }
-
-header nav {
-  display: flex;
-  justify-content: center;
-  align-content: center; }
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    header nav ul li a {
-      font-size: 1.5em;
-      color: #fff2c9;
-      text-decoration-line: none;
-      font-weight: 800;
-      margin: 1em; }
-  header nav img:nth-child(2) {
-    width: 8em;
-    margin-left: auto; }
-  header nav img:nth-child(3) {
-    display: none; }
-
-header .headertextbox1 {
-  position: relative;
-  z-index: +1;
-  padding-right: 2rem;
-  padding-top: 5rem;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column; }
-
-header .graphicobject {
-  display: flex;
-  justify-content: center; }
-  header .graphicobject .squarebox {
+header {
+  padding-top: 1em;
+  padding: 1.5em; }
+  header h1 {
+    margin-top: 2em;
+    text-align: right; }
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        padding-bottom: 0.5em; }
+        header nav ul li a {
+          font-size: 0.8em;
+          color: #fff2c9;
+          text-decoration-line: none;
+          font-weight: 800; }
+    header nav img:nth-child(2) {
+      width: 4.4em;
+      margin-left: auto; }
+    header nav img:nth-child(3) {
+      display: none; }
+  header .headertextbox1 {
     position: relative;
-    bottom: 15em;
-    background-color: #3e2f80;
-    width: 20em;
-    height: 20em; }
-
-header h3 {
-  margin: 0 auto;
-  width: 70%;
-  text-align: center; }
-
-header section.artwork {
-  margin: 5em auto;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  header section.artwork svg {
-    box-shadow: 1rem 1rem 0rem 0rem #3e2f80;
-    width: 30rem;
-    height: 30rem; }
-    header section.artwork svg .cls-1 {
-      fill: #a09db0; }
+    z-index: +1;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column; }
+  header .graphicobject {
+    display: flex;
+    justify-content: center; }
+    header .graphicobject .squarebox {
+      position: relative;
+      bottom: 7em;
+      background-color: #3e2f80;
+      width: 10em;
+      height: 10em; }
+  header h3 {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center; }
+  header section.artwork {
+    margin: 5em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header section.artwork svg {
+      box-shadow: 0.5em 0.5em 0em 0em #3e2f80;
+      width: 18em;
+      height: 18em; }
+      header section.artwork svg .cls-1 {
+        fill: #a09db0; }
 
 main {
-  padding-top: 5em;
+  padding-top: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,24 +104,25 @@ main {
     text-align: center; }
   main .tutorialsteps {
     width: 60%;
-    background-color: #a09db0;
-    margin: 5em auto;
+    background-color: #fff2c9;
+    margin: 1em 2em 2em auto;
     padding: 4em 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 1rem 1rem 0rem 0rem #ff7bac; }
+    box-shadow: 0.5em 0.5em 0em 0em #8674d4; }
     main .tutorialsteps h3 {
-      text-align: center; }
+      text-align: center;
+      color: #262626; }
     main .tutorialsteps svg {
       padding: 2em;
-      width: 15em;
-      filter: drop-shadow(10px 10px 0px #ff7bac); }
+      width: 5em;
+      /*filter: drop-shadow(10px 10px 0px $colorpink);*/ }
       main .tutorialsteps svg .cls-1 {
-        fill: #3e2f80; }
+        fill: #8674d4; }
   main .graphicobjects {
-    margin: 2em auto;
+    margin: 1em auto;
     max-width: 50em; }
 
 aside {
@@ -141,14 +141,16 @@ aside {
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 30em;
-    background-color: #ff7bac; }
+    height: 10em;
+    background-color: #ff7bac;
+    box-shadow: 0.5em 0.5em 0em 0em #fff2c9; }
     aside .buttonbox button.testbtn {
       margin: 4em;
       background-color: #8674d4;
       border: none;
-      width: 18rem;
-      box-shadow: 0.5rem 0.5rem 0rem 0rem #fff2c9; }
+      width: 18em;
+      height: 3em;
+      box-shadow: 0.5em 0.5em 0em 0em #fff2c9; }
       aside .buttonbox button.testbtn p {
         font-weight: 700;
         text-transform: uppercase; }
@@ -157,8 +159,7 @@ section.infobox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 5em; }
+  align-items: center; }
   section.infobox h3 {
     text-align: center;
     max-width: 15em;
@@ -166,35 +167,42 @@ section.infobox {
   section.infobox button.merinfobtn {
     background-color: #fff2c9;
     border: none;
-    box-shadow: 0.5rem 0.5rem 0rem 0rem #8674d4;
+    box-shadow: 0.5em 0.5em 0em 0em #8674d4;
     margin: 5em;
-    padding: 1em 3em; }
+    padding: 1em 3em;
+    width: 18em;
+    height: 3em; }
     section.infobox button.merinfobtn p {
       font-weight: 700;
       color: #262626;
       text-transform: uppercase; }
 
 footer {
-  padding: 3em 2em;
-  background-color: black; }
+  padding: 1em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
   footer .textandgraphics {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    margin-top: 2em; }
     footer .textandgraphics .graphicline {
       margin: 0 auto;
-      width: 30rem; }
+      max-width: 30em; }
+      footer .textandgraphics .graphicline img {
+        margin: 0; }
   footer .logobox {
-    padding-left: 2rem;
-    padding-right: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1rem; }
+    grid-gap: 0.5em;
+    padding-top: 2em;
+    padding-bottom: 2em; }
     footer .logobox img {
       margin: 0 auto;
-      width: 8rem; }
+      max-width: 6em; }
   footer img {
-    width: 30rem; }
+    width: 10em; }
 
 @media screen and (min-width: 1400px) {
   body {

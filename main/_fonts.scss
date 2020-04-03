@@ -7,7 +7,11 @@ h1, h2, h3, p{
     font-family: $fontdisplay;
 }
 
-h1 {
+p, a{
+    font-family: $fontread;
+}
+
+h1, h2, h3, p, a {
 margin: 0;
 }
 
