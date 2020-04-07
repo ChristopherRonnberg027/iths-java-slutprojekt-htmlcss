@@ -6,9 +6,9 @@
         }
 
         nav {
+            
             display: flex;
             justify-content: right;
-
             ul {
                 list-style: none;
                 margin: 0;
@@ -34,13 +34,18 @@
             }
     
             svg:nth-child(3) {
-                margin-top: 2em;
-                height: 6em;
-                margin: 3rem;
+                /*height: 6em;
+                margin-left: auto;*/
             }
         }
 
     }
+
+    body > div > header > nav > svg:nth-child(3){
+        height: 6em;
+        margin-left: auto;
+    }
+    
 
     main {
         .gallery {
