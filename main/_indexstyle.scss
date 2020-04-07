@@ -79,7 +79,12 @@ aside {
         height: 10em;
         background-color: $colorpink;
 
-        button.testbtn{
+    
+       
+
+        a.testbtn{
+            text-decoration-line: none;
+            text-align: center;
             margin: 4em;
             min-width: 10em;
             background-color: $colorregularpurple;
@@ -88,6 +93,11 @@ aside {
             box-shadow: 0.3em 0.3em 0em 0em $colorwhite;
 
             p {
+                padding-top: 0.5em;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
                 font-weight: 800;
                 text-transform: uppercase;
             }
@@ -111,7 +121,9 @@ section.infobox {
         line-height: 1.2em;
     }
 
-    button.merinfobtn{
+    a.merinfobtn{
+        text-align: center;
+        text-decoration-line: none;
         background-color: $colorwhite;
         border: none;
         box-shadow: 0.3em 0.3em 0em 0em $colorregularpurple;
@@ -120,9 +132,16 @@ section.infobox {
         min-width: 10em;
         height: 3em;
         p {
-            font-weight: 800;
             color: $colorblack;
-            text-transform: uppercase;
+                padding-top: 0.5em;
+                padding-left:1em;
+                padding-right: 1em;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: 800;
+                text-transform: uppercase;
         }
     }
 }

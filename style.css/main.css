@@ -163,14 +163,21 @@ aside {
     align-items: center;
     height: 10em;
     background-color: #ff7bac; }
-    aside .buttonbox button.testbtn {
+    aside .buttonbox a.testbtn {
+      text-decoration-line: none;
+      text-align: center;
       margin: 4em;
       min-width: 10em;
       background-color: #8674d4;
       border: none;
       height: 3em;
       box-shadow: 0.3em 0.3em 0em 0em #fff2c9; }
-      aside .buttonbox button.testbtn p {
+      aside .buttonbox a.testbtn p {
+        padding-top: 0.5em;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
         font-weight: 800;
         text-transform: uppercase; }
 
@@ -186,17 +193,41 @@ section.infobox {
     text-align: center;
     max-width: 25em;
     line-height: 1.2em; }
-  section.infobox button.merinfobtn {
+  section.infobox a.merinfobtn {
+    text-align: center;
+    text-decoration-line: none;
     background-color: #fff2c9;
     border: none;
     box-shadow: 0.3em 0.3em 0em 0em #8674d4;
     margin: 5em;
     min-width: 10em;
     height: 3em; }
-    section.infobox button.merinfobtn p {
-      font-weight: 800;
+    section.infobox a.merinfobtn p {
       color: #262626;
+      padding-top: 0.5em;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: 800;
       text-transform: uppercase; }
+
+section.testsida {
+  background-color: #8674d4;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  section.testsida article.testa {
+    padding: 2em;
+    margin: 2em;
+    width: 90%;
+    background-color: #ff7bac;
+    box-shadow: 0.3em 0.3em 0em 0em #3e2f80; }
+    section.testsida article.testa h3 {
+      text-align: center;
+      color: #fff2c9; }
 
 body {
   min-width: 125px; }

@@ -1,0 +1,25 @@
+
+
+
+section.testsida{
+    background-color: $colorregularpurple;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+    article.testa{
+        padding: 2em;
+        margin: 2em;
+        width:90%;
+        background-color: $colorpink;
+        box-shadow: 0.3em 0.3em 0em 0em $colordarkpuple;
+        h3{
+            text-align: center;
+            color: $colorwhite;
+        }
+    }
+
+
+  
+}
