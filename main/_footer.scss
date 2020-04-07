@@ -1,0 +1,46 @@
+footer {
+    padding: 1em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .textandgraphics{
+
+        margin-top: 2em;
+
+        p {
+            text-align: center;
+        }
+
+        .graphicline{
+            margin: 0 auto;
+            max-width: 30em;
+
+            img{
+                margin: 0;
+            }
+        }
+    }
+
+    .logobox{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        img{
+            margin: 0 auto;
+            max-width: 6em;
+        }
+    }
+
+  
+    svg {
+        align-content: flex-end;
+        width: 10em;
+    }
+}

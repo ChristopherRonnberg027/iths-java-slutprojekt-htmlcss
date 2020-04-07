@@ -1,21 +1,25 @@
 @import 'main/colors';
 @import 'main/fonts';
+@import 'main/footer';
+@import 'main/header';
+@import 'main/indexstyle';
+
 
 body {
-    min-width: 375px;
+    min-width: 125px;
 }
 
 h1{
     color: $colorwhite;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 h3{
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 
@@ -35,269 +39,85 @@ img {
 }
 
 
-header {
-    background-image: url("/img/flowers1-small.png");
-    background-size: cover;
-    padding-top: 1em;
- 
-    padding: 1.5em;
-    h1 {
-        margin-top: 2em;
-        text-align: right;
-    }
 
-    nav {
+
+
+
+
+
+
+
+@media screen and (min-width: 1366px){
+
+
+    header {
+
+        h1{
+            margin-right: 3em;
+        }
+
+        nav {
             display: flex;
-            justify-content: center;
-            align-content: center;
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+            justify-content: right;
 
-            li {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
                 padding-bottom: 0.5em;
+                float: left;
 
-                a {
-                    font-size: 0.8em;
-                    color: $colorwhite;
-                    text-decoration-line: none;
-                    font-weight: 800;                
+                    a {
+                        padding: 2em;
+                        font-size: 0.8em;
+                        color: $colorwhite;
+                        text-decoration-line: none;
+                        font-weight: 800;                
+                    }
                 }
             }
-        }
-        img:nth-child(2) {
-            width: 4.4em;
-            margin-left: auto;
-        }
 
-        img:nth-child(3) {
-            display: none;
-        }
-
-    }
-
-    .headertextbox1 {
-        position: relative;
-        z-index: +1;
-        padding-right: 2rem;
-        padding-top: 5rem;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-
-    }
-
-    .graphicobject{
-        display: flex;
-        justify-content: center;
-
-        .squarebox {
-            position: relative;
-            bottom: 7em;
-            background-color: $colordarkpuple;
-            width: 10em;
-            height: 10em;
-        }
-    }
-
-    h3 {
-        margin: 0 auto;
-        max-width: 80%;
-        text-align: center;
-        margin-bottom: 5em;
-    }
-
-    section.artwork{
-        margin: 5em auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        svg {
-            box-shadow: 0.5em 0.5em 0em 0em $colordarkpuple;
-            width: 18em;
-            height: 18em;
-            .cls-1{
-                fill: $colorgrey;
+            svg:nth-child(2) {
+                display: none;
+            }
+    
+            svg:nth-child(3) {
+                margin-top: 2em;
+                height: 6em;
+                margin: 3rem;
             }
         }
+
     }
 
-}
-
-
-main {
-    padding-top: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-        width: 8em;
-        text-align: center;
-        background-color: $colorwhite;
-        color: $colorblack;
-        box-shadow: 0.2em 0.2em 0em 0em $colorregularpurple;
-    }
- 
-    .tutorialsteps {
-        width: 60%;
-        background-color: $colorwhite;
-        margin: 1em 2em;
-        padding: 2em 2em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0.5em 0.5em 0em 0em $colorregularpurple;
-
-        h3 {
-            text-align: center;
-            color: $colorblack;
-        }
-
-        svg {
-            padding:1em;
-            width: 5em;
-            /*filter: drop-shadow(10px 10px 0px $colorpink);*/
-            .cls-1{
-                fill: $colorregularpurple;
-            }
+    main {
+        .gallery {
+            flex-direction: row;
         }
     }
 
-    .graphicobjects{
-        margin: 1em auto;
-        max-width: 50em;
-    }
-
-
-}
-
-aside {
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h3{
-        text-align: center;
-        max-width: 15em;
-        line-height: 1.2em;
-    }
-
-
-
-    .buttonbox{
-        margin: 5em auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 10em;
-        background-color: $colorpink;
-        box-shadow: 0.5em 0.5em 0em 0em $colorwhite;
-
-        button.testbtn{
-            margin: 4em;
-            
-            background-color: $colorregularpurple;
-            border: none;
-            width: 18em;
-            height: 3em;
-            box-shadow: 0.5em 0.5em 0em 0em $colorwhite;
-
-            p {
-                font-weight: 700;
-                text-transform: uppercase;
-            }
+    aside{
+        .buttonbox {
+            min-width: 20em;
         }
     }
 
-}
-
-section.infobox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h3{
-        text-align: center;
-        max-width: 15em;
-        line-height: 1.2em;
-    }
-
-    button.merinfobtn{
-        background-color: $colorwhite;
-        border: none;
-        box-shadow: 0.5em 0.5em 0em 0em $colorregularpurple;
-        margin: 5em;
-        padding: 1em 3em;
-        width: 18em;
-        height: 3em;
-        p {
-            font-weight: 700;
-            color: $colorblack;
-            text-transform: uppercase;
-        }
-    }
-}
-
-footer {
-    padding: 1em;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .textandgraphics{
-
-        margin-top: 2em;
-
-        .graphicline{
-            margin: 0 auto;
-            max-width: 30em;
-
+    footer{
+        .logobox{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 3em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+    
             img{
-                margin: 0;
+                margin: 0 auto;
+                max-width: 6em;
             }
         }
-    }
-
-    .logobox{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 0.5em;
-        padding-top: 2em;
-        padding-bottom: 2em;
-
-        img{
-            margin: 0 auto;
-            max-width: 6em;
-        }
-    }
-
-  
-    img {
-            width: 10em;
-    }
-   
-
-
-
-
-
-}
-
-@media screen and (min-width: 1400px){
-
-    body{
-        background-color: green;
     }
 }
 
