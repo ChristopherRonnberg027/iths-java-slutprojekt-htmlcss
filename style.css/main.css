@@ -25,7 +25,7 @@ footer {
       text-align: center; }
     footer .textandgraphics .graphicline {
       margin: 0 auto;
-      max-width: 30em; }
+      max-width: 20em; }
       footer .textandgraphics .graphicline img {
         margin: 0; }
   footer .logobox {
@@ -43,8 +43,6 @@ footer {
     width: 10em; }
 
 header {
-  background-image: url("/img/purpleflowers1-small.png");
-  background-size: cover;
   padding-top: 1em;
   padding: 1.5em;
   /*.backgroundimage {
@@ -87,6 +85,15 @@ header {
     display: flex;
     align-items: flex-end;
     flex-direction: column; }
+  header h3 {
+    margin: 0 auto;
+    max-width: 20em;
+    text-align: center;
+    margin-bottom: 5em; }
+
+header {
+  background-image: url("/img/purpleflowers1-small.png");
+  background-size: cover; }
   header .graphicobject {
     display: flex;
     justify-content: center; }
@@ -101,11 +108,6 @@ header {
       transition: transform 2s; }
     header .graphicobject .squarebox:hover {
       transform: rotate(360deg); }
-  header h3 {
-    margin: 0 auto;
-    max-width: 20em;
-    text-align: center;
-    margin-bottom: 5em; }
 
 main {
   padding-top: 2em;
@@ -181,6 +183,86 @@ aside {
         font-weight: 800;
         text-transform: uppercase; }
 
+header {
+  /*background-image: url("/img/purpleflowers1-small.png");
+    background-size: cover;*/ }
+  header .graphicobject {
+    display: flex;
+    justify-content: center; }
+    header .graphicobject .triangle {
+      position: relative;
+      bottom: 7em;
+      clip-path: polygon(0 0, 50% 100%, 100% 0);
+      background-color: #3e2f80;
+      width: 10em;
+      height: 10em; }
+
+section.testsida {
+  background-color: #8674d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30em; }
+  section.testsida article.testa {
+    position: relative;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    max-width: 30em;
+    background-color: #ff7bac;
+    box-shadow: 0.3em 0.3em 0em 0em #3e2f80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    section.testsida article.testa h1 {
+      padding-top: 0.6em; }
+    section.testsida article.testa h2 {
+      text-align: center;
+      padding-top: 0.9em; }
+    section.testsida article.testa img {
+      margin: 0 auto;
+      max-width: 30em;
+      margin: 0; }
+    section.testsida article.testa ul {
+      list-style: none; }
+      section.testsida article.testa ul li {
+        padding-bottom: 0.5em;
+        font-size: 0.8em;
+        color: #fff2c9;
+        text-decoration-line: none;
+        float: left;
+        padding-right: 0.8em; }
+
+section.svar {
+  padding: 4em;
+  background-color: #fff2c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  section.svar img {
+    max-width: 30em; }
+  section.svar h1, section.svar h3 {
+    padding-top: 1em;
+    text-align: center;
+    color: #3e2f80;
+    max-width: 30em; }
+
+section.testinfo {
+  min-height: 30em;
+  background-color: #8674d4;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  section.testinfo p {
+    margin: 0.5em;
+    max-width: 30em; }
+
 section.infobox {
   height: 30em;
   padding-top: 3em;
@@ -200,11 +282,11 @@ section.infobox {
     border: none;
     box-shadow: 0.3em 0.3em 0em 0em #8674d4;
     margin: 5em;
-    min-width: 10em;
-    height: 3em; }
+    min-width: 10em; }
     section.infobox a.merinfobtn p {
       color: #262626;
-      padding-top: 0.5em;
+      padding-top: 1em;
+      padding-bottom: 1em;
       padding-left: 1em;
       padding-right: 1em;
       margin-block-start: 0em;
@@ -214,27 +296,61 @@ section.infobox {
       font-weight: 800;
       text-transform: uppercase; }
 
-section.testsida {
-  background-color: #8674d4;
+header {
+  /*background-image: url("/img/purpleflowers1-small.png");
+    background-size: cover;*/
+  background-color: #a09db0; }
+  header .graphicobject {
+    display: flex;
+    justify-content: center; }
+    header .graphicobject .circle {
+      clip-path: circle(50% at 50% 50%);
+      position: relative;
+      bottom: 7em;
+      background-color: #262626;
+      width: 10em;
+      height: 10em;
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+      transition: transform 2s; }
+
+main.info {
+  background-color: #a09db0;
   display: flex;
   justify-content: center;
-  align-content: center; }
-  section.testsida article.testa {
-    padding: 2em;
-    margin: 2em;
-    width: 90%;
-    background-color: #ff7bac;
-    box-shadow: 0.3em 0.3em 0em 0em #3e2f80; }
-    section.testsida article.testa h3 {
+  flex-direction: column;
+  padding: 2em; }
+  main.info article.symptom {
+    max-width: 20em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column; }
+    main.info article.symptom h2 {
+      max-width: 30em;
+      background-color: #262626;
       text-align: center;
-      color: #fff2c9; }
+      padding: 1em; }
+    main.info article.symptom ul {
+      list-style: none; }
+      main.info article.symptom ul li {
+        text-decoration-line: none;
+        float: left; }
+    main.info article.symptom img {
+      max-width: 30em; }
+    main.info article.symptom a {
+      text-decoration-color: #3e2f80; }
+      main.info article.symptom a p {
+        color: #3e2f80;
+        font-weight: 800; }
+    main.info article.symptom p {
+      padding-top: 0.5em; }
 
 body {
   min-width: 125px; }
 
 h1 {
   color: #fff2c9;
-  font-size: 3em; }
+  font-size: 2.5em; }
 
 h3 {
   font-size: 1.5em; }
@@ -252,7 +368,7 @@ img {
   background-color: #262626;
   margin: 0 auto; }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1024px) {
   header h1 {
     margin-right: 3em; }
   header nav {
@@ -290,4 +406,7 @@ img {
     padding-bottom: 2em; }
     footer .logobox img {
       margin: 0 auto;
-      max-width: 6em; } }
+      max-width: 6em; }
+  section.testsida {
+    text-align: center;
+    height: 20em; } }

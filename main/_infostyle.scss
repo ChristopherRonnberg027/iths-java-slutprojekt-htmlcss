@@ -1,0 +1,80 @@
+header {
+    /*background-image: url("/img/purpleflowers1-small.png");
+    background-size: cover;*/
+    background-color: $colorgrey;
+
+    .graphicobject{
+        display: flex;
+        justify-content: center;
+
+        .circle {
+            clip-path: circle(50% at 50% 50%);
+            position: relative;
+            bottom: 7em;
+            background-color: $colorblack;
+            width: 10em;
+            height: 10em;
+            transform: rotate(0deg);
+            transform-origin: 50% 50%;
+            transition: transform 2s;
+        }
+
+    }
+}
+
+
+
+main.info{
+    background-color: $colorgrey;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+
+
+    article.symptom{
+
+        max-width: 20em;
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+
+
+        h2 {
+            max-width: 30em;
+            background-color: $colorblack;
+            text-align: center;
+            padding: 1em;
+        }
+
+        ul{
+            list-style: none;
+            
+            li{
+                text-decoration-line: none;
+                float: left;
+            }
+        }
+
+
+        img {
+            max-width: 30em;
+        }
+
+    
+        a {
+            text-decoration-color: $colordarkpuple;
+            p{
+                color:$colordarkpuple;
+                font-weight: 800;
+            }
+        }
+
+        p{
+            padding-top: 0.5em;
+        }
+ 
+    }
+
+
+}

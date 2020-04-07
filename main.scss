@@ -4,6 +4,8 @@
 @import 'main/header';
 @import 'main/indexstyle';
 @import 'main/teststyle';
+@import 'main/testinfo';
+@import 'main/infostyle';
 
 
 body {
@@ -12,7 +14,7 @@ body {
 
 h1{
     color: $colorwhite;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 h3{
@@ -48,7 +50,7 @@ img {
 
 
 
-@media screen and (min-width: 1366px){
+@media screen and (min-width: 1024px){
 
 
     header {
@@ -69,6 +71,7 @@ img {
                 li {
                 padding-bottom: 0.5em;
                 float: left;
+                
 
                     a {
                         padding: 2em;
@@ -120,6 +123,13 @@ img {
             }
         }
     }
+
+    section.testsida {
+        text-align: center;
+        height: 20em;
+    }
+
+
 }
 
 
