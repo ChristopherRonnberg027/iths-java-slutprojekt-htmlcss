@@ -22,13 +22,14 @@ header {
     }
 }
 
-
-
-main.info{
+.maininfo-wrapper{
     background-color: $colorgrey;
     display: flex;
     justify-content: center;
     flex-direction: column;
+main.info{
+    
+    
     padding: 2em;
 
 
@@ -77,4 +78,5 @@ main.info{
     }
 
 
+}
 }

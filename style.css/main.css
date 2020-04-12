@@ -12,39 +12,40 @@ h1, h2, h3, p, a {
 h3 {
   margin: 0; }
 
-footer {
-  padding: 1em;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-  footer .textandgraphics {
-    margin-top: 2em; }
-    footer .textandgraphics p {
-      text-align: center; }
-    footer .textandgraphics .graphicline {
-      margin: 0 auto;
-      max-width: 20em; }
-      footer .textandgraphics .graphicline img {
-        margin: 0; }
-  footer .logobox {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 0.5em;
-    padding-top: 2em;
-    padding-bottom: 2em; }
-    footer .logobox img {
-      margin: 0 auto;
-      max-width: 6em; }
-  footer svg {
-    align-content: flex-end;
-    width: 10em; }
+.footer-wrapper {
+  background-color: black; }
+  .footer-wrapper footer {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .footer-wrapper footer .textandgraphics {
+      margin-top: 2em; }
+      .footer-wrapper footer .textandgraphics p {
+        text-align: center; }
+      .footer-wrapper footer .textandgraphics .graphicline {
+        margin: 0 auto;
+        max-width: 20em; }
+        .footer-wrapper footer .textandgraphics .graphicline img {
+          margin: 0; }
+    .footer-wrapper footer .logobox {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 0.5em;
+      padding-top: 2em;
+      padding-bottom: 2em; }
+      .footer-wrapper footer .logobox img {
+        margin: 0 auto;
+        max-width: 6em; }
+    .footer-wrapper footer svg {
+      align-content: flex-end;
+      width: 10em; }
 
 header {
   padding-top: 1em;
-  padding: 1.5em;
+  padding: 1em;
   /*.backgroundimage {
         
         position: relative;
@@ -92,7 +93,7 @@ header {
     margin-bottom: 5em; }
 
 header {
-  background-image: url("/img/purpleflowers1-small.png");
+  background-image: url("../img/flowers_flower1-small.png");
   background-size: cover; }
   header .graphicobject {
     display: flex;
@@ -109,102 +110,74 @@ header {
     header .graphicobject .squarebox:hover {
       transform: rotate(360deg); }
 
-main {
+.main-wrapper main {
   padding-top: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  main h1 {
-    width: 8em;
+  .main-wrapper main h1 {
+    position: relative;
+    bottom: 1.4em;
     text-align: center;
     color: #fff2c9; }
-  main .gallery {
-    padding-top: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    main .gallery article.tutorialsteps {
-      height: 15em;
-      width: 60%;
+  .main-wrapper main .gallery {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr); }
+    .main-wrapper main .gallery article.tutorialsteps {
       background-color: #3e2f80;
-      margin: 1em 2em;
-      padding: 1em 1em;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      /*box-shadow: 0.5em 0.5em 0em 0em $colorregularpurple;*/ }
-      main .gallery article.tutorialsteps h3 {
+      align-items: center; }
+      .main-wrapper main .gallery article.tutorialsteps h3 {
+        padding: 0.5em 0.5em;
         text-align: center;
         color: #fff2c9; }
-      main .gallery article.tutorialsteps svg {
-        max-width: 5em;
-        padding: 1em; }
-        main .gallery article.tutorialsteps svg .cls-1 {
+      .main-wrapper main .gallery article.tutorialsteps svg {
+        padding: 1em;
+        max-width: 5em; }
+        .main-wrapper main .gallery article.tutorialsteps svg .cls-1 {
           fill: #ff7bac; }
-    main .gallery .graphicobjects {
-      margin: 1em auto;
-      max-width: 50em; }
 
-aside {
+.aside-wrapper aside {
   padding-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  aside h3 {
+  .aside-wrapper aside h3 {
     text-align: center;
     max-width: 15em;
     line-height: 1.2em; }
-  aside .buttonbox {
-    margin: 5em auto;
+  .aside-wrapper aside .buttonbox {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 10em;
-    background-color: #ff7bac; }
-    aside .buttonbox a.testbtn {
-      text-decoration-line: none;
-      text-align: center;
-      margin: 4em;
-      min-width: 10em;
-      background-color: #8674d4;
-      border: none;
-      height: 3em;
-      box-shadow: 0.3em 0.3em 0em 0em #fff2c9; }
-      aside .buttonbox a.testbtn p {
-        padding-top: 0.5em;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-weight: 800;
-        text-transform: uppercase; }
+    align-items: center; }
+    .aside-wrapper aside .buttonbox a.test {
+      background-color: #8674d4; }
 
-header {
-  /*background-image: url("/img/purpleflowers1-small.png");
-    background-size: cover;*/ }
-  header .graphicobject {
-    display: flex;
-    justify-content: center; }
-    header .graphicobject .triangle {
-      position: relative;
-      bottom: 7em;
-      clip-path: polygon(0 0, 50% 100%, 100% 0);
-      background-color: #ff7bac;
-      width: 10em;
-      height: 10em; }
+header .graphicobject {
+  display: flex;
+  justify-content: center; }
+  header .graphicobject .triangle {
+    position: relative;
+    bottom: 7em;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    background-color: #ff7bac;
+    width: 10em;
+    height: 10em; }
 
-section.testsida {
+.testsida-wrapper section.testsida {
   background-color: #8674d4;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 30em; }
-  section.testsida article.testa {
+  .testsida-wrapper section.testsida article.testa {
     position: relative;
     padding-left: 2em;
     padding-right: 2em;
@@ -217,18 +190,16 @@ section.testsida {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    section.testsida article.testa h1 {
-      padding-top: 0.6em; }
-    section.testsida article.testa h2 {
+    .testsida-wrapper section.testsida article.testa h2 {
       text-align: center;
       padding-top: 0.9em; }
-    section.testsida article.testa img {
+    .testsida-wrapper section.testsida article.testa img {
       margin: 0 auto;
       max-width: 30em;
       margin: 0; }
-    section.testsida article.testa ul {
+    .testsida-wrapper section.testsida article.testa ul {
       list-style: none; }
-      section.testsida article.testa ul li {
+      .testsida-wrapper section.testsida article.testa ul li {
         padding-bottom: 0.5em;
         font-size: 0.8em;
         color: #fff2c9;
@@ -236,22 +207,22 @@ section.testsida {
         float: left;
         padding-right: 0.8em; }
 
-section.svar {
+.svar-wrapper section.svar {
   padding: 4em;
   background-color: #fff2c9;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  section.svar img {
+  .svar-wrapper section.svar img {
     max-width: 30em; }
-  section.svar h1, section.svar h3 {
+  .svar-wrapper section.svar h1, .svar-wrapper section.svar h3 {
     padding-top: 1em;
     text-align: center;
     color: #3e2f80;
     max-width: 30em; }
 
-section.testinfo {
+.testinfo-wrapper section.testinfo {
   min-height: 30em;
   background-color: #8674d4;
   padding: 2em;
@@ -259,11 +230,11 @@ section.testinfo {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  section.testinfo p {
+  .testinfo-wrapper section.testinfo p {
     margin: 0.5em;
     max-width: 30em; }
 
-section.infobox {
+.info-wrapper section.infobox {
   height: 25em;
   padding-top: 3em;
   background-color: #3e2f80;
@@ -271,24 +242,15 @@ section.infobox {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  section.infobox p {
+  .info-wrapper section.infobox p {
     text-align: center;
     max-width: 20em;
     line-height: 1.2em; }
-  section.infobox a.merinfobtn {
-    text-align: center;
-    text-decoration-line: none;
-    background-color: #fff2c9;
-    border: none;
-    box-shadow: 0.3em 0.3em 0em 0em #8674d4;
-    margin: 5em;
-    min-width: 10em; }
-    section.infobox a.merinfobtn p {
+  .info-wrapper section.infobox a.merinfo {
+    background-color: #fff2c9; }
+    .info-wrapper section.infobox a.merinfo p {
       color: #262626;
-      padding-top: 1em;
-      padding-bottom: 1em;
-      padding-left: 1em;
-      padding-right: 1em;
+      padding-top: 0.5em;
       margin-block-start: 0em;
       margin-block-end: 0em;
       margin-inline-start: 0px;
@@ -314,43 +276,44 @@ header {
       transform-origin: 50% 50%;
       transition: transform 2s; }
 
-main.info {
+.maininfo-wrapper {
   background-color: #a09db0;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  padding: 2em; }
-  main.info article.symptom {
-    max-width: 20em;
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column; }
-    main.info article.symptom h2 {
-      max-width: 30em;
-      background-color: #262626;
-      text-align: center;
-      padding: 1em; }
-    main.info article.symptom ul {
-      list-style: none; }
-      main.info article.symptom ul li {
-        text-decoration-line: none;
-        float: left; }
-    main.info article.symptom img {
-      max-width: 30em; }
-    main.info article.symptom a {
-      text-decoration-color: #3e2f80; }
-      main.info article.symptom a p {
-        color: #3e2f80;
-        font-weight: 800; }
-    main.info article.symptom p {
-      padding-top: 0.5em; }
+  flex-direction: column; }
+  .maininfo-wrapper main.info {
+    padding: 2em; }
+    .maininfo-wrapper main.info article.symptom {
+      max-width: 20em;
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column; }
+      .maininfo-wrapper main.info article.symptom h2 {
+        max-width: 30em;
+        background-color: #262626;
+        text-align: center;
+        padding: 1em; }
+      .maininfo-wrapper main.info article.symptom ul {
+        list-style: none; }
+        .maininfo-wrapper main.info article.symptom ul li {
+          text-decoration-line: none;
+          float: left; }
+      .maininfo-wrapper main.info article.symptom img {
+        max-width: 30em; }
+      .maininfo-wrapper main.info article.symptom a {
+        text-decoration-color: #3e2f80; }
+        .maininfo-wrapper main.info article.symptom a p {
+          color: #3e2f80;
+          font-weight: 800; }
+      .maininfo-wrapper main.info article.symptom p {
+        padding-top: 0.5em; }
 
 @media screen and (min-width: 1024px) {
   header h1 {
     margin-right: 3em; }
   header nav {
     display: flex;
-    justify-content: right; }
+    justify-content: left; }
     header nav ul {
       list-style: none;
       margin: 0;
@@ -373,25 +336,51 @@ main.info {
     height: 6em;
     margin-left: auto; }
   main .gallery {
-    flex-direction: row; }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; }
   aside .buttonbox {
     min-width: 20em; }
-  footer .logobox {
+  .footer-wrapper footer .logobox {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 3em;
     padding-top: 2em;
     padding-bottom: 2em; }
-    footer .logobox img {
+    .footer-wrapper footer .logobox img {
       margin: 0 auto;
       max-width: 6em; }
   section.testsida {
     text-align: center;
     height: 20em; } }
 
+.btn {
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 11px 0px -4px rgba(0, 0, 0, 0.75);
+  text-decoration-line: none;
+  text-align: center;
+  margin: 4em;
+  min-width: 10em; }
+  .btn p {
+    padding: 0.9em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 800;
+    text-transform: uppercase; }
+
+* {
+  box-sizing: border-box; }
+
 body {
-  min-width: 125px; }
+  margin: 0 auto; }
+
+.wrapper {
+  padding: 1.5em;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 h1 {
   color: #fff2c9;

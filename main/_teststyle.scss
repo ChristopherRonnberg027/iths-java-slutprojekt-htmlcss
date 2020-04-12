@@ -1,9 +1,4 @@
 header{
-
-    /*background-image: url("/img/purpleflowers1-small.png");
-    background-size: cover;*/
-
-
     .graphicobject{
         display: flex;
         justify-content: center;
@@ -19,7 +14,7 @@ header{
     }
 }
 
-
+.testsida-wrapper{
 section.testsida {
     background-color: $colorregularpurple;
     display: flex;
@@ -43,13 +38,6 @@ section.testsida {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
-  
-       
-
-        h1{
-            padding-top: 0.6em;
-        }
 
         h2 {
             text-align: center;
@@ -80,8 +68,10 @@ section.testsida {
 
   
 }
+}
 
 
+.svar-wrapper{
 section.svar {
     padding: 4em;
     background-color: $colorwhite;
@@ -101,7 +91,9 @@ section.svar {
         max-width: 30em;
     }
 }
+}
 
+.testinfo-wrapper{
 section.testinfo{
     min-height: 30em;
     background-color: $colorregularpurple;
@@ -117,8 +109,4 @@ section.testinfo{
         
     }
 }
-
-@media screen and (min-width: 1366px){
-
-   
 }

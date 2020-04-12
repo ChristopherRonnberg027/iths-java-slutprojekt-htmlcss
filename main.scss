@@ -7,10 +7,24 @@
 @import 'main/testinfo';
 @import 'main/infostyle';
 @import 'main/responsive';
+@import 'main/buttons';
 
+
+*{
+    box-sizing: border-box;
+}
 
 body {
-    min-width: 125px;
+    margin: 0 auto;
+}
+
+.header-wrapper{
+}
+
+.wrapper{
+    padding: 1.5em;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1{
