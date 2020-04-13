@@ -1,3 +1,8 @@
+.teststyle{
+    background-image: url('../img/flowers_flower2-small.png');
+    background-size: cover;
+}
+
 header{
     .graphicobject{
         display: flex;
@@ -7,7 +12,7 @@ header{
             position: relative;
             bottom: 7em;
             clip-path: polygon(0 0, 50% 100%, 100% 0);
-            background-color: $colorpink;
+            background-color: $primarycolor;
             width: 10em;
             height: 10em;
         }
@@ -15,23 +20,23 @@ header{
 }
 
 .testsida-wrapper{
+    background-color: $tertiarycolor;
 section.testsida {
-    background-color: $colorregularpurple;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 30em;
     
 
     article.testa{
-        position: relative;
-        padding-left: 2em;
-        padding-right: 2em;
-        padding-bottom: 2em;
-        margin-bottom: 2em;
-        max-width: 30em;
-        background-color: $colorpink;
+        //position: relative;
+        // padding-left: 2em;
+        // padding-right: 2em;
+        // padding-bottom: 2em;
+        // margin-bottom: 2em;
+        // max-width: 30em;
+        background-color: $primarycolor;
         box-shadow: 0.3em 0.3em 0em 0em $colordarkpuple;
 
         display: flex;
@@ -39,9 +44,9 @@ section.testsida {
         align-items: center;
         flex-direction: column;
 
-        h2 {
+        h1 {
             text-align: center;
-            padding-top: 0.9em;
+            padding: 0.9em 0.9em;
         }
 
         img{
@@ -52,9 +57,10 @@ section.testsida {
 
         ul { 
             list-style: none;
+            
 
             li {
-                padding-bottom: 0.5em;
+                padding-bottom: 1em;
                 font-size: 0.8em;
                 color: $colorwhite;
                 text-decoration-line: none;      
@@ -72,41 +78,41 @@ section.testsida {
 
 
 .svar-wrapper{
-section.svar {
-    padding: 4em;
-    background-color: $colorwhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-color: $tertiarycolor;
+    section.svar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-    img{
-        max-width:30em;
-    }
+        .object{
+            margin-top: 2em;
+            background-color: $primarycolor;
+            width: 10em;
+            height: 3em;
+        }
 
-    h1, h3{
+        h1, h3{
         padding-top: 1em;
         text-align: center;
-        color:$colordarkpuple;
+        color:$colorwhite;
         max-width: 30em;
+        }
     }
-}
 }
 
 .testinfo-wrapper{
-section.testinfo{
-    min-height: 30em;
-    background-color: $colorregularpurple;
-    padding: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-color: $primarycolor;
+        section.testinfo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
-    p{
-        margin: 0.5em;
-        max-width: 30em;
-        
+        h3{
+            margin: 0.5em;
+            max-width: 30em;
+            padding: 2em;
+        }
     }
-}
 }

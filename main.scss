@@ -19,6 +19,8 @@ body {
 }
 
 .header-wrapper{
+    background-color: $colorgrey;
+
 }
 
 .wrapper{
@@ -52,7 +54,7 @@ img {
 }
 
 .grid-container{
-    background-color: $colorblack;
+    background-color: $secondarycolor;
     margin: 0 auto;
 }
 

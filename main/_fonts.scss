@@ -1,13 +1,23 @@
-$fontdisplay: 'Helvetica';
+//$fontdisplay: 'Helvetica';
 /*'Space Mono'*/
-$fontread: "Helvetica";
+//$fontread: "Helvetica";
 /*'Work Sans', sans-serif*/
 
-h1, h2, h3, p{
+/*
+$fontdisplay: 'BioRhyme', serif;
+$fontread: 'Space Mono', monospace;
+*/
+
+$fontdisplay: 'Montserrat', sans-serif;
+$fontread: 'Cardo', serif;
+
+
+h1, h2, h3, a{
     font-family: $fontdisplay;
+    font-weight: 500;
 }
 
-p, a{
+p{
     font-family: $fontread;
 }
 
@@ -16,5 +26,5 @@ margin: 0;
 }
 
 h3 {
-margin: 0 ;
+    //font-weight: 700;
 }
