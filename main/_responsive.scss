@@ -27,6 +27,7 @@
                         color: $colorwhite;
                         text-decoration-line: none;
                         font-weight: 800;
+                        border-bottom: 0;
                     }
                 }
             }
@@ -54,7 +55,7 @@
                 margin-bottom: 1.5em;
                 list-style: none;
                 border-right: 1px solid $primarycolor;
-                padding-left: 6em;
+                padding-left: 3em;
     
                 &:last-child{
                     border: 0;
