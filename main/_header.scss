@@ -34,15 +34,22 @@ header {
             color: $primarycolor;
         }
 
-        svg:nth-child(1) {
-            width: 4.4em;
+        img{
+            width: 3em;
+            height: 100%;
             margin-left: auto;
         }
 
+        svg:nth-child(1) {
+            display: none;
+            //width: 4.4em;
+            //margin-left: auto;
+        }
+
         svg:nth-child(2) {
-            
-            width: 4.4em;
-            margin-left: auto;
+            display: none;
+            //width: 4.4em;
+            //margin-left: auto;
         }
 
         svg:nth-child(3) {

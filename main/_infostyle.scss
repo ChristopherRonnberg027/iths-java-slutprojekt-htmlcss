@@ -39,8 +39,9 @@ header {
         // // "gallery";
         
         article.symptom1,article.symptom2{
+            
             background-color: $colorwhite;
-            margin: 2em;
+            margin-bottom: 2em;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,7 +49,6 @@ header {
 
             h1 {
                 color: $secondarycolor;
-                text-align: center;
                 padding: 1em;
                 font-weight: 700;
             }
@@ -57,13 +57,16 @@ header {
                 list-style: none;
                 padding-bottom:2em;
                 li{
-                    list-style-image: url(../img/checks_check-black.png);
+                    //list-style-image: url(../img/checks_check-black.png);
+                    float: left;
+                    padding-left:0.4em;
                     p{
                         color: $secondarycolor;
                         font-weight: 700;
                     }
                 }
             }
+
             a {
                 text-decoration:none;
                 padding-bottom: 1.5em;
