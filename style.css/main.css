@@ -25,7 +25,10 @@ h1, h2, h3, p, a {
     .footer-wrapper footer .textandgraphics {
       margin-top: 2em; }
       .footer-wrapper footer .textandgraphics p {
-        text-align: center; }
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1em; }
       .footer-wrapper footer .textandgraphics .graphicline {
         margin: 0 auto;
         max-width: 20em; }
@@ -41,22 +44,31 @@ h1, h2, h3, p, a {
       .footer-wrapper footer .logobox img {
         margin: 0 auto;
         max-width: 6em; }
-    .footer-wrapper footer svg {
-      align-content: flex-end;
-      width: 10em; }
+    .footer-wrapper footer .address {
+      margin-right: auto;
+      display: flex;
+      flex-direction: column; }
+      .footer-wrapper footer .address p {
+        font-family: "Montserrat", sans-serif;
+        padding-bottom: 1em; }
+      .footer-wrapper footer .address ul {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px; }
+        .footer-wrapper footer .address ul li {
+          list-style-type: none;
+          color: #fff;
+          font-family: "Montserrat", sans-serif; }
+      .footer-wrapper footer .address svg {
+        margin-left: auto;
+        width: 15em;
+        padding: 2em 0.5em; }
 
 header {
   padding-top: 1em;
-  padding: 1em;
-  /*.backgroundimage {
-        
-        position: relative;
-        bottom: 30em;
-        img {
-            margin: 0 auto;
-            width: 50em;
-        }
-    }*/ }
+  padding: 1em; }
   header h1 {
     margin-top: 2em;
     text-align: right; }
@@ -74,7 +86,10 @@ header {
           font-size: 0.8em;
           color: #fff;
           text-decoration-line: none;
-          font-weight: 800; }
+          font-weight: 800;
+          transition: color 0.5s; }
+    header nav ul:hover {
+      color: #00d4b0; }
     header nav svg:nth-child(2) {
       width: 4.4em;
       margin-left: auto; }
@@ -88,17 +103,12 @@ header {
     display: flex;
     align-items: flex-end;
     flex-direction: column; }
-  header h3 {
-    margin: 0 auto;
-    max-width: 20em;
-    text-align: center;
-    margin-bottom: 5em; }
 
 .index {
   background-image: url("../img/flowers_flower1-small.png");
   background-size: cover; }
 
-header h1 {
+header h1, header h3 {
   font-weight: 700; }
 
 header .graphicobject {
@@ -115,6 +125,31 @@ header .graphicobject {
     transition: transform 2s; }
   header .graphicobject .squarebox:hover {
     transform: rotate(360deg); }
+
+.main-wrapper h3 {
+  margin: 0 auto;
+  max-width: 25em;
+  text-align: center;
+  margin-bottom: 3em; }
+
+.main-wrapper .stats {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  color: #00d4b0;
+  justify-content: space-around;
+  margin-top: 2em; }
+  .main-wrapper .stats li {
+    margin-bottom: 1.5em;
+    list-style: none;
+    border-right: 0; }
+  .main-wrapper .stats strong {
+    font-size: 1.6em; }
+  .main-wrapper .stats span {
+    display: block;
+    text-transform: uppercase;
+    font-size: .75em; }
 
 .main-wrapper main {
   padding-top: 2em;
@@ -140,7 +175,8 @@ header .graphicobject {
         padding: 1em 1em;
         text-align: center;
         font-weight: 900;
-        color: #262626; }
+        color: #262626;
+        margin-bottom: 0em; }
       .main-wrapper main .gallery article.tutorialsteps svg {
         padding: 0.5em;
         max-width: 5em; }
@@ -162,7 +198,10 @@ header .graphicobject {
     justify-content: center;
     align-items: center; }
     .aside-wrapper aside .buttonbox a.test {
-      background-color: #00d4b0; }
+      background-color: #00d4b0;
+      transition: background-color 0.5s; }
+    .aside-wrapper aside .buttonbox .btn:hover {
+      background-color: #ff2b4f; }
 
 .teststyle {
   background-image: url("../img/flowers_flower2-small.png");
@@ -175,9 +214,14 @@ header .graphicobject {
     position: relative;
     bottom: 7em;
     clip-path: polygon(0 0, 50% 100%, 100% 0);
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 2s;
     background-color: #00d4b0;
     width: 10em;
     height: 10em; }
+  header .graphicobject .triangle:hover {
+    transform: rotate(360deg); }
 
 .testsida-wrapper {
   background-color: #00d4b0; }
@@ -201,7 +245,7 @@ header .graphicobject {
       font-size: 0.8em;
       text-decoration-line: none;
       padding-right: 0.8em;
-      list-style-image: url(/img/checks_check-indigo.png); }
+      list-style-image: url(../img/checks_check-indigo.png); }
       .testsida-wrapper ul li h3 {
         font-weight: 700;
         color: #4B0082; }
@@ -216,8 +260,11 @@ header .graphicobject {
     .svar-wrapper section.svar .object {
       margin-top: 2em;
       background-color: #00d4b0;
+      clip-path: polygon(0 0, 50% 100%, 100% 0);
+      transform-origin: 50% 50%;
+      background-color: #00d4b0;
       width: 10em;
-      height: 3em; }
+      height: 10em; }
     .svar-wrapper section.svar h1, .svar-wrapper section.svar h3 {
       padding: 1em;
       text-align: center;
@@ -225,17 +272,25 @@ header .graphicobject {
       max-width: 30em; }
 
 .testinfo-wrapper {
-  background-color: #00d4b0; }
+  padding-top: 2em;
+  background-color: #00d4b0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .testinfo-wrapper section.testinfo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column; }
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto; }
+    .testinfo-wrapper section.testinfo h2 {
+      color: #4B0082;
+      font-weight: 700; }
     .testinfo-wrapper section.testinfo h3 {
       color: #4B0082;
-      margin: 0.5em;
       max-width: 30em;
-      padding: 1em; }
+      padding-bottom: 1em;
+      font-size: 1em; }
 
 .info-wrapper {
   background-color: #4B0082; }
@@ -251,16 +306,21 @@ header .graphicobject {
       max-width: 20em;
       line-height: 1.2em; }
     .info-wrapper section.infobox a.merinfo {
-      background-color: #fff; }
+      background-color: #fff;
+      transition: background-color 0.5s; }
       .info-wrapper section.infobox a.merinfo p {
-        color: #262626;
+        color: #4B0082;
         padding-top: 0.5em;
         margin-block-start: 0em;
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         font-weight: 800;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        transition: color 0.5s; }
+    .info-wrapper section.infobox .btn:hover {
+      background-color: #00d4b0;
+      color: #fff; }
 
 .infostyle {
   background-image: url("../img/flowers_flower3-small.png");
@@ -273,7 +333,7 @@ header .graphicobject {
     clip-path: circle(50% at 50% 50%);
     position: relative;
     bottom: 7em;
-    background-color: #262626;
+    background-color: #00d4b0;
     width: 10em;
     height: 10em;
     transform: rotate(0deg);
@@ -281,47 +341,40 @@ header .graphicobject {
     transition: transform 2s; }
 
 .maininfo-wrapper {
-  background-color: #a09db0;
+  background-color: #4B0082;
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  .maininfo-wrapper main.info {
-    padding: 2em; }
-    .maininfo-wrapper main.info article.symptom {
-      background-color: #262626;
-      margin-top: 2em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
-      .maininfo-wrapper main.info article.symptom h1 {
-        max-width: 30em;
-        text-align: center;
-        padding: 1em; }
-      .maininfo-wrapper main.info article.symptom ul {
-        list-style: none;
-        padding: 2em;
-        max-width: 60em; }
-        .maininfo-wrapper main.info article.symptom ul li {
-          text-decoration-line: none;
-          float: left; }
-          .maininfo-wrapper main.info article.symptom ul li p {
-            padding-left: 0.4em; }
-      .maininfo-wrapper main.info article.symptom img {
-        max-width: 30em; }
-      .maininfo-wrapper main.info article.symptom a {
-        text-decoration: none; }
-        .maininfo-wrapper main.info article.symptom a p {
-          text-align: center;
-          padding: 2em;
-          font-family: "Montserrat", sans-serif;
-          color: #00d4b0;
-          font-weight: 800; }
-      .maininfo-wrapper main.info article.symptom p {
-        padding-top: 0.5em; }
+  .maininfo-wrapper main.info article.symptom {
+    background-color: #fff;
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .maininfo-wrapper main.info article.symptom h1 {
+      color: #262626;
+      text-align: center;
+      padding: 1em;
+      font-weight: 700; }
+    .maininfo-wrapper main.info article.symptom ul {
+      list-style: none;
+      padding-bottom: 2em; }
+      .maininfo-wrapper main.info article.symptom ul li {
+        list-style-image: url(../img/checks_check-black.png); }
+        .maininfo-wrapper main.info article.symptom ul li p {
+          color: #262626;
+          font-weight: 700; }
+    .maininfo-wrapper main.info article.symptom a {
+      text-decoration: none;
+      padding-bottom: 1.5em; }
+      .maininfo-wrapper main.info article.symptom a p {
+        font-family: "Montserrat", sans-serif;
+        color: #00d4b0;
+        font-weight: 800; }
 
 @media screen and (min-width: 1024px) {
-  .index, .teststyle {
+  .index, .teststyle, .infostyle {
     background-position: center; }
   header h1 {
     margin-right: 3em; }
@@ -344,14 +397,22 @@ header .graphicobject {
     header nav svg:nth-child(2) {
       display: none; }
     header nav svg:nth-child(3) {
-      /*height: 6em;
-                margin-left: auto;*/ }
+      width: 4.4em;
+      margin-left: auto; }
   body > div > header > nav > svg:nth-child(3) {
     height: 6em;
     margin-left: auto; }
+  .main-wrapper .stats li {
+    margin-bottom: 1.5em;
+    list-style: none;
+    border-right: 1px solid #00d4b0;
+    padding-left: 6em; }
+    .main-wrapper .stats li:last-child {
+      border: 0; }
   .main-wrapper main .gallery {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto; }
+    grid-template-rows: auto;
+    grid-gap: 1em; }
   aside .buttonbox {
     min-width: 20em; }
   .footer-wrapper footer .logobox {
@@ -365,8 +426,7 @@ header .graphicobject {
       margin: 0 auto;
       max-width: 6em; }
   section.testsida {
-    text-align: center;
-    height: 20em; } }
+    height: 25em; } }
 
 .btn {
   border: none;
@@ -393,7 +453,7 @@ body {
   margin: 0 auto; }
 
 .header-wrapper {
-  background-color: #a09db0; }
+  background-color: #262626; }
 
 .wrapper {
   padding: 1.5em;

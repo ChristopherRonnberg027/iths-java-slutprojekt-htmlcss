@@ -4,6 +4,7 @@
 }
 
 header{
+
     .graphicobject{
         display: flex;
         justify-content: center;
@@ -12,9 +13,16 @@ header{
             position: relative;
             bottom: 7em;
             clip-path: polygon(0 0, 50% 100%, 100% 0);
+            transform: rotate(0deg);
+            transform-origin: 50% 50%;
+            transition: transform 2s;
             background-color: $primarycolor;
             width: 10em;
             height: 10em;
+        }
+
+        .triangle:hover {
+            transform: rotate(360deg);
         }
     }
 }
@@ -51,7 +59,7 @@ header{
             font-size: 0.8em;
             text-decoration-line: none;
             padding-right: 0.8em;
-            list-style-image: url(/img/checks_check-indigo.png);
+            list-style-image: url(../img/checks_check-indigo.png);
             h3{
                 font-weight: 700;
                 color: $tertiarycolor;
@@ -73,8 +81,11 @@ header{
         .object{
             margin-top: 2em;
             background-color: $primarycolor;
+            clip-path: polygon(0 0, 50% 100%, 100% 0);
+            transform-origin: 50% 50%;
+            background-color: $primarycolor;
             width: 10em;
-            height: 3em;
+            height: 10em;
         }
 
         h1, h3{
@@ -87,18 +98,30 @@ header{
 }
 
 .testinfo-wrapper{
+
+    padding-top: 2em;
     background-color: $primarycolor;
+    display: flex;
+            justify-content: center;
+            align-items: center;
+
         section.testinfo{
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
+            margin: 0 auto;
 
-        h3{
-            color: $tertiarycolor;
-            margin: 0.5em;
-            max-width: 30em;
-            padding: 1em;
+            h2{
+                color: $tertiarycolor;
+                font-weight: 700;
+            }
+
+            h3{
+                color: $tertiarycolor;
+                max-width: 30em;
+                padding-bottom: 1em;
+                font-size: 1em;
+            }
         }
     }
-}

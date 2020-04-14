@@ -24,10 +24,16 @@ header {
                     font-size: 0.8em;
                     color: $colorwhite;
                     text-decoration-line: none;
-                    font-weight: 800;                
+                    font-weight: 800;
+                    transition: color 0.5s;          
                 }
             }
         }
+
+        ul:hover{
+            color: $primarycolor;
+        }
+
         svg:nth-child(2) {
             width: 4.4em;
             margin-left: auto;
@@ -50,25 +56,4 @@ header {
         flex-direction: column;
 
     }
-
-
-
-    h3 {
-        margin: 0 auto;
-        max-width: 20em;
-        text-align: center;
-        margin-bottom: 5em;
-    }
-
-
-    /*.backgroundimage {
-        
-        position: relative;
-        bottom: 30em;
-        img {
-            margin: 0 auto;
-            width: 50em;
-        }
-    }*/
-
 }

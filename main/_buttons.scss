@@ -3,16 +3,15 @@
     border-radius: 40px;
     box-shadow: 0px 11px 0px -4px rgba(0,0,0,0.75);
     text-decoration-line: none;
-            text-align: center;
-            margin: 4em;
-            min-width: 10em;
+    text-align: center;
+    margin: 4em;
+    min-width: 10em;
 
-
-            p {
-                font-size: 1em;
-                padding: 0.9em;  
-                font-weight: 800;
-                text-transform: uppercase;
-                font-family: $fontdisplay;
-            }
+    p {
+        font-size: 1em;
+        padding: 0.9em;  
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family: $fontdisplay;
+    }
 }

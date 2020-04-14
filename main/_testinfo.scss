@@ -1,36 +1,41 @@
 .info-wrapper{
 
     background-color:$tertiarycolor;
-
-section.infobox {
-    height: 25em;
-    padding-top: 3em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    p{
-        text-align: center;
-        max-width: 20em;
-        line-height: 1.2em;
-    }
-
-    a.merinfo{
-        background-color: $colorwhite;
+    
+    section.infobox {
+        height: 25em;
+        padding-top: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
+        p{
+            text-align: center;
+            max-width: 20em;
+            line-height: 1.2em;
+        }
+        
+        a.merinfo{
+            background-color: $colorwhite;
+            transition: background-color 0.5s;
+            
+            p {
+                color: $tertiarycolor;
+                padding-top: 0.5em;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: 800;
+                text-transform: uppercase;
+                transition: color 0.5s;
+            }
+        }
 
-        p {
-            color: $colorblack;
-            padding-top: 0.5em;
-            margin-block-start: 0em;
-            margin-block-end: 0em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: 800;
-            text-transform: uppercase;
+        .btn:hover{
+            background-color: $primarycolor;
+            color: $colorwhite;
         }
     }
-}
-
 }
