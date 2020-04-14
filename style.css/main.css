@@ -95,12 +95,6 @@ header {
       width: 3em;
       height: 100%;
       margin-left: auto; }
-    header nav svg:nth-child(1) {
-      display: none; }
-    header nav svg:nth-child(2) {
-      display: none; }
-    header nav svg:nth-child(3) {
-      display: none; }
   header .headertextbox1 {
     position: relative;
     z-index: +1;
