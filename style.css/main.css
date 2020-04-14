@@ -407,11 +407,6 @@ header .graphicobject {
           text-decoration-line: none;
           font-weight: 800;
           border-bottom: 0; }
-    header nav svg:nth-child(2) {
-      display: none; }
-    header nav svg:nth-child(3) {
-      width: 10em;
-      margin-left: auto; }
   .main-wrapper .stats li {
     margin-bottom: 1.5em;
     list-style: none;
