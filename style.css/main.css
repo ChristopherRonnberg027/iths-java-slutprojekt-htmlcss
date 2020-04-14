@@ -358,10 +358,12 @@ header .graphicobject {
     align-items: center;
     flex-direction: column; }
     .maininfo-wrapper main.info article.symptom1 h1, .maininfo-wrapper main.info article.symptom2 h1 {
+      max-width: 20em;
       color: #262626;
       padding: 1em;
       font-weight: 700; }
     .maininfo-wrapper main.info article.symptom1 ul, .maininfo-wrapper main.info article.symptom2 ul {
+      max-width: 30em;
       list-style: none;
       padding-bottom: 2em; }
       .maininfo-wrapper main.info article.symptom1 ul li, .maininfo-wrapper main.info article.symptom2 ul li {

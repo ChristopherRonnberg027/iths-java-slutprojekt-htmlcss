@@ -48,12 +48,14 @@ header {
             flex-direction: column;
 
             h1 {
+                max-width: 20em;
                 color: $secondarycolor;
                 padding: 1em;
                 font-weight: 700;
             }
             
             ul{
+                max-width: 30em;
                 list-style: none;
                 padding-bottom:2em;
                 li{
