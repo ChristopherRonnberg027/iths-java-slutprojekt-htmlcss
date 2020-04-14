@@ -20,60 +20,45 @@ header{
 }
 
 .testsida-wrapper{
-    background-color: $tertiarycolor;
-section.testsida {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-
-    article.testa{
-        //position: relative;
-        // padding-left: 2em;
-        // padding-right: 2em;
-        // padding-bottom: 2em;
-        // margin-bottom: 2em;
-        // max-width: 30em;
-        background-color: $primarycolor;
-        box-shadow: 0.3em 0.3em 0em 0em $colordarkpuple;
-
+    background-color: $primarycolor;
+    section.testsida {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
-        h1 {
+        
+        .textbox{
+        background-color: $colorwhite;
+            padding: 1em 1em;
+            margin: 1em;
+            h1 {
+            color: $secondarycolor;
             text-align: center;
-            padding: 0.9em 0.9em;
-        }
-
-        img{
-            margin: 0 auto;
-            max-width: 30em;
-            margin: 0;
-        }
-
-        ul { 
-            list-style: none;
-            
-
-            li {
-                padding-bottom: 1em;
-                font-size: 0.8em;
-                color: $colorwhite;
-                text-decoration-line: none;      
-                float: left;
-                padding-right: 0.8em;  
+            font-weight: 700;
             }
         }
     }
 
 
 
-  
-}
+    ul { 
+        list-style: none;
+            
+    
+
+        li {
+            padding-bottom: 1em;
+            font-size: 0.8em;
+            text-decoration-line: none;
+            padding-right: 0.8em;
+            list-style-image: url(/img/checks_check-indigo.png);
+            h3{
+                font-weight: 700;
+                color: $tertiarycolor;
+            } 
+        }
+    }
+
 }
 
 
@@ -93,7 +78,7 @@ section.testsida {
         }
 
         h1, h3{
-        padding-top: 1em;
+        padding: 1em;
         text-align: center;
         color:$colorwhite;
         max-width: 30em;
@@ -110,9 +95,10 @@ section.testsida {
             flex-direction: column;
 
         h3{
+            color: $tertiarycolor;
             margin: 0.5em;
             max-width: 30em;
-            padding: 2em;
+            padding: 1em;
         }
     }
 }

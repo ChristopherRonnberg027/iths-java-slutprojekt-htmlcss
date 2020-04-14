@@ -2,7 +2,6 @@
 .index {
     background-image: url('../img/flowers_flower1-small.png');
     background-size: cover;
-    
 }
 
 
@@ -20,7 +19,7 @@ header{
         .squarebox {
             position: relative;
             bottom: 7em;
-            background-color: $tertiarycolor;
+            background-color: $primarycolor;
             width: 10em;
             height: 10em;
             transform: rotate(0deg);
@@ -35,8 +34,6 @@ header{
 }
 
 .main-wrapper{
-
-
     main {
     padding-top: 2em;
     display: flex;
@@ -59,7 +56,7 @@ header{
 
 
         article.tutorialsteps {
-            background-color: $primarycolor;
+            background-color: $colorwhite;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -68,14 +65,15 @@ header{
             h3 {
                 padding: 1em 1em;
                 text-align: center;
-                color: $tertiarycolor;
+                font-weight: 900;
+                color: $secondarycolor;
             }
     
             svg {
                 padding: 0.5em;
                 max-width: 5em;
                 .cls-1{
-                    fill: $secondarycolor;
+                    fill: $primarycolor;
                 }
 
             }
@@ -95,7 +93,7 @@ aside {
 
     h3{
         text-align: center;
-        max-width: 25em;
+        max-width: 18em;
         line-height: 1.2em;
     }
 

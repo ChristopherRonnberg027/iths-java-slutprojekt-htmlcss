@@ -72,7 +72,7 @@ header {
         padding-bottom: 0.5em; }
         header nav ul li a {
           font-size: 0.8em;
-          color: #fff2c9;
+          color: #fff;
           text-decoration-line: none;
           font-weight: 800; }
     header nav svg:nth-child(2) {
@@ -107,7 +107,7 @@ header .graphicobject {
   header .graphicobject .squarebox {
     position: relative;
     bottom: 7em;
-    background-color: #4B0082;
+    background-color: #00d4b0;
     width: 10em;
     height: 10em;
     transform: rotate(0deg);
@@ -131,7 +131,7 @@ header .graphicobject {
     grid-template-columns: auto;
     grid-template-rows: repeat(3, 1fr); }
     .main-wrapper main .gallery article.tutorialsteps {
-      background-color: #00d4b0;
+      background-color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -139,12 +139,13 @@ header .graphicobject {
       .main-wrapper main .gallery article.tutorialsteps h3 {
         padding: 1em 1em;
         text-align: center;
-        color: #4B0082; }
+        font-weight: 900;
+        color: #262626; }
       .main-wrapper main .gallery article.tutorialsteps svg {
         padding: 0.5em;
         max-width: 5em; }
         .main-wrapper main .gallery article.tutorialsteps svg .cls-1 {
-          fill: #262626; }
+          fill: #00d4b0; }
 
 .aside-wrapper aside {
   padding-top: 3rem;
@@ -154,7 +155,7 @@ header .graphicobject {
   align-items: center; }
   .aside-wrapper aside h3 {
     text-align: center;
-    max-width: 25em;
+    max-width: 18em;
     line-height: 1.2em; }
   .aside-wrapper aside .buttonbox {
     display: flex;
@@ -179,35 +180,31 @@ header .graphicobject {
     height: 10em; }
 
 .testsida-wrapper {
-  background-color: #4B0082; }
+  background-color: #00d4b0; }
   .testsida-wrapper section.testsida {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    .testsida-wrapper section.testsida article.testa {
-      background-color: #00d4b0;
-      box-shadow: 0.3em 0.3em 0em 0em #3e2f80;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
-      .testsida-wrapper section.testsida article.testa h1 {
+    .testsida-wrapper section.testsida .textbox {
+      background-color: #fff;
+      padding: 1em 1em;
+      margin: 1em; }
+      .testsida-wrapper section.testsida .textbox h1 {
+        color: #262626;
         text-align: center;
-        padding: 0.9em 0.9em; }
-      .testsida-wrapper section.testsida article.testa img {
-        margin: 0 auto;
-        max-width: 30em;
-        margin: 0; }
-      .testsida-wrapper section.testsida article.testa ul {
-        list-style: none; }
-        .testsida-wrapper section.testsida article.testa ul li {
-          padding-bottom: 1em;
-          font-size: 0.8em;
-          color: #fff2c9;
-          text-decoration-line: none;
-          float: left;
-          padding-right: 0.8em; }
+        font-weight: 700; }
+  .testsida-wrapper ul {
+    list-style: none; }
+    .testsida-wrapper ul li {
+      padding-bottom: 1em;
+      font-size: 0.8em;
+      text-decoration-line: none;
+      padding-right: 0.8em;
+      list-style-image: url(/img/checks_check-indigo.png); }
+      .testsida-wrapper ul li h3 {
+        font-weight: 700;
+        color: #4B0082; }
 
 .svar-wrapper {
   background-color: #4B0082; }
@@ -222,9 +219,9 @@ header .graphicobject {
       width: 10em;
       height: 3em; }
     .svar-wrapper section.svar h1, .svar-wrapper section.svar h3 {
-      padding-top: 1em;
+      padding: 1em;
       text-align: center;
-      color: #fff2c9;
+      color: #fff;
       max-width: 30em; }
 
 .testinfo-wrapper {
@@ -235,9 +232,10 @@ header .graphicobject {
     align-items: center;
     flex-direction: column; }
     .testinfo-wrapper section.testinfo h3 {
+      color: #4B0082;
       margin: 0.5em;
       max-width: 30em;
-      padding: 2em; }
+      padding: 1em; }
 
 .info-wrapper {
   background-color: #4B0082; }
@@ -253,7 +251,7 @@ header .graphicobject {
       max-width: 20em;
       line-height: 1.2em; }
     .info-wrapper section.infobox a.merinfo {
-      background-color: #fff2c9; }
+      background-color: #fff; }
       .info-wrapper section.infobox a.merinfo p {
         color: #262626;
         padding-top: 0.5em;
@@ -323,6 +321,8 @@ header .graphicobject {
         padding-top: 0.5em; }
 
 @media screen and (min-width: 1024px) {
+  .index, .teststyle {
+    background-position: center; }
   header h1 {
     margin-right: 3em; }
   header nav {
@@ -338,7 +338,7 @@ header .graphicobject {
         header nav ul li a {
           padding: 2em;
           font-size: 0.8em;
-          color: #fff2c9;
+          color: #fff;
           text-decoration-line: none;
           font-weight: 800; }
     header nav svg:nth-child(2) {
@@ -377,14 +377,14 @@ header .graphicobject {
   margin: 4em;
   min-width: 10em; }
   .btn p {
+    font-size: 1em;
     padding: 0.9em;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: 800;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif; }
+
+.shadow {
+  box-shadow: 10px 10px 0px 0px #ca82ff; }
 
 * {
   box-sizing: border-box; }
@@ -401,7 +401,7 @@ body {
   margin: 0 auto; }
 
 h1 {
-  color: #fff2c9;
+  color: #fff;
   font-size: 2.5em; }
 
 h3 {
@@ -411,7 +411,7 @@ p {
   font-size: 1.2em; }
 
 h1, h2, h3, p {
-  color: #fff2c9; }
+  color: #fff; }
 
 img {
   width: 100%; }
