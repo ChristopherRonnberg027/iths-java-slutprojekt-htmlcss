@@ -450,7 +450,7 @@ header .graphicobject {
     font-family: "Montserrat", sans-serif; }
 
 .shadow {
-  box-shadow: 10px 10px 0px 0px #ca82ff; }
+  box-shadow: 5px 5px 0px 0px #ca82ff; }
 
 * {
   box-sizing: border-box; }
