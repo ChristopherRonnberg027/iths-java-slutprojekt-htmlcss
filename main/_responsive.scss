@@ -107,13 +107,13 @@
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
                 grid-template-rows: repeat(1, 1fr);
-                grid-gap: 3em;
+                grid-gap: 5em;
                 padding-top: 2em;
                 padding-bottom: 2em;
                 
                 img{
                     margin: 0 auto;
-                    max-width: 6em;
+                    width: 6em;
                 }
             }
         }

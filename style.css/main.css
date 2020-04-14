@@ -38,12 +38,12 @@ h1, h2, h3, p, a {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-gap: 0.5em;
+      grid-gap: 4em;
       padding-top: 2em;
       padding-bottom: 2em; }
       .footer-wrapper footer .logobox img {
         margin: 0 auto;
-        max-width: 6em; }
+        max-width: 4em; }
     .footer-wrapper footer .address {
       margin-right: auto;
       display: flex;
@@ -425,12 +425,12 @@ header .graphicobject {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-gap: 3em;
+    grid-gap: 5em;
     padding-top: 2em;
     padding-bottom: 2em; }
     .footer-wrapper footer .logobox img {
       margin: 0 auto;
-      max-width: 6em; }
+      width: 6em; }
   section.testsida {
     height: 25em; } }
 

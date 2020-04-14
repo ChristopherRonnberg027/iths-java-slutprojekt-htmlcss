@@ -35,13 +35,13 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            grid-gap: 0.5em;
+            grid-gap: 4em;
             padding-top: 2em;
             padding-bottom: 2em;
             
             img{
                 margin: 0 auto;
-                max-width: 6em;
+                max-width: 4em;
             }
         }
         .address{
