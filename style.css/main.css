@@ -90,6 +90,9 @@ header {
           transition: color 0.5s; }
     header nav ul:hover {
       color: #00d4b0; }
+    header nav svg:nth-child(1) {
+      width: 4.4em;
+      margin-left: auto; }
     header nav svg:nth-child(2) {
       width: 4.4em;
       margin-left: auto; }
@@ -136,7 +139,7 @@ header .graphicobject {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   color: #00d4b0;
   justify-content: space-around;
   margin-top: 2em; }
@@ -345,33 +348,35 @@ header .graphicobject {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  .maininfo-wrapper main.info article.symptom {
+  .maininfo-wrapper main.info article.symptom1, .maininfo-wrapper main.info article.symptom2 {
     background-color: #fff;
     margin: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    .maininfo-wrapper main.info article.symptom h1 {
+    .maininfo-wrapper main.info article.symptom1 h1, .maininfo-wrapper main.info article.symptom2 h1 {
       color: #262626;
       text-align: center;
       padding: 1em;
       font-weight: 700; }
-    .maininfo-wrapper main.info article.symptom ul {
+    .maininfo-wrapper main.info article.symptom1 ul, .maininfo-wrapper main.info article.symptom2 ul {
       list-style: none;
       padding-bottom: 2em; }
-      .maininfo-wrapper main.info article.symptom ul li {
+      .maininfo-wrapper main.info article.symptom1 ul li, .maininfo-wrapper main.info article.symptom2 ul li {
         list-style-image: url(../img/checks_check-black.png); }
-        .maininfo-wrapper main.info article.symptom ul li p {
+        .maininfo-wrapper main.info article.symptom1 ul li p, .maininfo-wrapper main.info article.symptom2 ul li p {
           color: #262626;
           font-weight: 700; }
-    .maininfo-wrapper main.info article.symptom a {
+    .maininfo-wrapper main.info article.symptom1 a, .maininfo-wrapper main.info article.symptom2 a {
       text-decoration: none;
       padding-bottom: 1.5em; }
-      .maininfo-wrapper main.info article.symptom a p {
+      .maininfo-wrapper main.info article.symptom1 a p, .maininfo-wrapper main.info article.symptom2 a p {
         font-family: "Montserrat", sans-serif;
         color: #00d4b0;
         font-weight: 800; }
+  .maininfo-wrapper main.info article.gallery1, .maininfo-wrapper main.info article.gallery2 {
+    display: none; }
 
 @media screen and (min-width: 1024px) {
   .index, .teststyle, .infostyle {
@@ -397,11 +402,8 @@ header .graphicobject {
     header nav svg:nth-child(2) {
       display: none; }
     header nav svg:nth-child(3) {
-      width: 4.4em;
+      width: 10em;
       margin-left: auto; }
-  body > div > header > nav > svg:nth-child(3) {
-    height: 6em;
-    margin-left: auto; }
   .main-wrapper .stats li {
     margin-bottom: 1.5em;
     list-style: none;

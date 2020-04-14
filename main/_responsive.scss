@@ -35,17 +35,17 @@
             }
     
             svg:nth-child(3) {
-                width: 4.4em;
+                width: 10em;
                 margin-left: auto;
             }
         }
 
     }
 
-    body > div > header > nav > svg:nth-child(3){
-        height: 6em;
-        margin-left: auto;
-    }
+    // body > div > header > nav > svg:nth-child(3){
+    //     height: 6em;
+    //     margin-left: auto;
+    // }
     
     .main-wrapper{
         .stats{
@@ -75,6 +75,30 @@
             min-width: 20em;
         }
     }
+
+    // main.info{
+    //     display: grid;
+    //     grid-template-columns: repeat(3,1fr);
+    //     grid-template-rows: auto;
+    //     grid-template-areas: 
+    //     "info1 gallery1 .."
+    //     ".. gallery2 info2";
+
+    //     article.symptom1{
+    //         grid-area: info1;
+    //     }
+    //     article.symptom2{
+    //         grid-area: info2;
+    //     }
+
+    //     article.gallery1{
+    //         grid-area: gallery1;
+    //     }
+
+    //     article.gallery2{
+    //         grid-area: gallery2;
+    //     }
+    // }
     
     .footer-wrapper{
         footer{

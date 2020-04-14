@@ -30,14 +30,22 @@ header {
     flex-direction: column;
     
     main.info{
+        // // display: grid;
+        // // grid-template-columns: 1fr;
+        // // grid-template-rows: repeat(3, 1fr);
+        // // grid-template-areas: 
+        // // "info"
+        // // "info"
+        // // "gallery";
         
-        article.symptom{
+        article.symptom1,article.symptom2{
             background-color: $colorwhite;
             margin: 2em;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+
             h1 {
                 color: $secondarycolor;
                 text-align: center;
@@ -65,6 +73,34 @@ header {
                     font-weight: 800;
                 }
             }
+        }
+
+        article.gallery1,article.gallery2{
+            display: none;
+            // background-color: $colorwhite;
+            // margin: 2em;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // flex-direction: column;
+
+            // img{
+            //     max-width:15em;
+            //     max-height: 15em;
+            // }
+            // h3{
+            //     padding-top: 0.5em;
+            //     font-family: $fontdisplay;
+            //     color:$secondarycolor;
+            //     font-weight: 700;
+            // }
+
+            // p{
+            //     padding: 0.5em 1em 2em 2em;
+            //     font-family: $fontdisplay;
+            //     color:$secondarycolor;
+                
+            // }
         }
     }
 }
