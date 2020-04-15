@@ -25,7 +25,7 @@ header {
             fill: $primarycolor;
             width: 10em;
             height: 10em;
-            transition: transform 2s fill 2s;
+            transition: transform 2s, fill 2s;
         }
 
         svg:hover{
@@ -91,7 +91,11 @@ header {
                     font-family: $fontdisplay;
                     color:$primarycolor;
                     font-weight: 800;
-                    
+                    transition: color 0.5s;
+                }
+
+                p:hover{
+                    color: $tertiarycolor;
                 }
             }
         }

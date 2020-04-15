@@ -369,7 +369,7 @@ header .graphicobject {
     fill: #00d4b0;
     width: 10em;
     height: 10em;
-    transition: transform 2s fill 2s; }
+    transition: transform 2s, fill 2s; }
   header .graphicobject svg:hover {
     fill: #4B0082;
     transform: rotate(360deg); }
@@ -409,7 +409,10 @@ header .graphicobject {
       .maininfo-wrapper section.info article.symptom1 a p, .maininfo-wrapper section.info article.symptom2 a p {
         font-family: "Montserrat", sans-serif;
         color: #00d4b0;
-        font-weight: 800; }
+        font-weight: 800;
+        transition: color 0.5s; }
+      .maininfo-wrapper section.info article.symptom1 a p:hover, .maininfo-wrapper section.info article.symptom2 a p:hover {
+        color: #4B0082; }
   .maininfo-wrapper section.info article.gallery1, .maininfo-wrapper section.info article.gallery2 {
     display: none; }
 
