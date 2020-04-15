@@ -94,8 +94,12 @@ header {
                     transition: color 0.5s;
                 }
 
-                p:hover{
-                    color: $tertiarycolor;
+
+                @media (hover: hover) and (pointer: fine){
+                    
+                    p:hover{
+                        color: $tertiarycolor;
+                    }
                 }
             }
         }

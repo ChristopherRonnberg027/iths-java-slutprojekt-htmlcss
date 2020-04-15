@@ -411,8 +411,9 @@ header .graphicobject {
         color: #00d4b0;
         font-weight: 800;
         transition: color 0.5s; }
-      .maininfo-wrapper section.info article.symptom1 a p:hover, .maininfo-wrapper section.info article.symptom2 a p:hover {
-        color: #4B0082; }
+      @media (hover: hover) and (pointer: fine) {
+        .maininfo-wrapper section.info article.symptom1 a p:hover, .maininfo-wrapper section.info article.symptom2 a p:hover {
+          color: #4B0082; } }
   .maininfo-wrapper section.info article.gallery1, .maininfo-wrapper section.info article.gallery2 {
     display: none; }
 
