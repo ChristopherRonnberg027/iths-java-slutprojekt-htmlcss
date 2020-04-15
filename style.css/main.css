@@ -311,7 +311,8 @@ header .graphicobject {
     margin: 0 auto; }
     .testinfo-wrapper section.testinfo h2 {
       color: #4B0082;
-      font-weight: 700; }
+      font-weight: 700;
+      padding-bottom: 0.1em; }
     .testinfo-wrapper section.testinfo h3 {
       color: #4B0082;
       max-width: 30em;
