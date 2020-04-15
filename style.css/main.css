@@ -17,7 +17,6 @@ h1, h2, h3, p, a {
 .footer-wrapper {
   background-color: black; }
   .footer-wrapper footer {
-    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
