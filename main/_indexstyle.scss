@@ -25,23 +25,6 @@ header{
             transform-origin: 50% 50%;
             transition: transform 2s;
         }
-
-        svg{
-            width: 10em;
-            height: 10em;
-            transform: rotate(0deg);
-            transform-origin: 50% 50%;
-            transition: transform 2s, fill 2s;
-            position: relative;
-            bottom: 7em;
-            fill: $primarycolor;
-        }
-
-
-        svg:hover {
-            transform: rotate(360deg);
-            fill: $tertiarycolor;
-        }
     }
 }
 

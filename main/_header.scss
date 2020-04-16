@@ -42,6 +42,30 @@ header {
 
     }
 
+    .graphicobject{
+        display: flex;
+        justify-content: center;
+
+        svg{
+            width: 10em;
+            height: 10em;
+            transform-origin: 50% 50%;
+            transition: transform 5s, fill 5s;
+            position: relative;
+            bottom: 7em;
+            transform: rotate(0deg);
+            fill: $primarycolor;
+        }
+    }
+
+    
+.graphicobject:hover svg{
+    //fill: $tertiarycolor;
+    transform: rotate(1080deg);
+}
+
+    
+
     .headertextbox1 {
         position: relative;
         z-index: +1;

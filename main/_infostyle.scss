@@ -3,38 +3,6 @@
     background-size: cover;
 }
 
-header {
-
-    .graphicobject{
-        display: flex;
-        justify-content: center;
-
-        .circle {
-            display: none;
-            clip-path: circle(50% at 50% 50%);
-            position: relative;
-            bottom: 7em;
-            background-color: $primarycolor;
-            width: 10em;
-            height: 10em;
-        }
-
-        svg{
-            position: relative;
-            bottom: 7em;
-            fill: $primarycolor;
-            width: 10em;
-            height: 10em;
-            transition: transform 2s, fill 2s;
-        }
-
-        svg:hover{
-            fill: $tertiarycolor;
-            transform: rotate(360deg);
-        }
-    }
-}
-
 .maininfo-wrapper{
     background-color: $tertiarycolor;
     display: flex;

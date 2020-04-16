@@ -49,7 +49,8 @@ h1, h2, h3, p, a {
       flex-direction: column; }
       .footer-wrapper footer .address p {
         font-family: "Montserrat", sans-serif;
-        padding-bottom: 1em; }
+        padding-bottom: 1em;
+        font-size: .7em; }
       .footer-wrapper footer .address ul {
         margin-block-start: 0em;
         margin-block-end: 0em;
@@ -59,7 +60,8 @@ h1, h2, h3, p, a {
         .footer-wrapper footer .address ul li {
           list-style-type: none;
           color: #fff;
-          font-family: "Montserrat", sans-serif; }
+          font-family: "Montserrat", sans-serif;
+          font-size: .8em; }
       .footer-wrapper footer .address svg {
         margin-left: auto;
         width: 16em;
@@ -93,6 +95,20 @@ header {
       width: 3em;
       height: 100%;
       margin-left: auto; }
+  header .graphicobject {
+    display: flex;
+    justify-content: center; }
+    header .graphicobject svg {
+      width: 10em;
+      height: 10em;
+      transform-origin: 50% 50%;
+      transition: transform 5s, fill 5s;
+      position: relative;
+      bottom: 7em;
+      transform: rotate(0deg);
+      fill: #00d4b0; }
+  header .graphicobject:hover svg {
+    transform: rotate(1080deg); }
   header .headertextbox1 {
     position: relative;
     z-index: +1;
@@ -122,18 +138,6 @@ header .graphicobject {
     transform: rotate(0deg);
     transform-origin: 50% 50%;
     transition: transform 2s; }
-  header .graphicobject svg {
-    width: 10em;
-    height: 10em;
-    transform: rotate(0deg);
-    transform-origin: 50% 50%;
-    transition: transform 2s, fill 2s;
-    position: relative;
-    bottom: 7em;
-    fill: #00d4b0; }
-  header .graphicobject svg:hover {
-    transform: rotate(360deg);
-    fill: #4B0082; }
 
 .main-wrapper h3 {
   margin: 0 auto;
@@ -215,33 +219,6 @@ header .graphicobject {
 .teststyle {
   background-image: url("../img/flowers_flower2-small.png");
   background-size: cover; }
-
-header .graphicobject {
-  display: flex;
-  justify-content: center; }
-  header .graphicobject .triangle {
-    display: none;
-    position: relative;
-    bottom: 7em;
-    clip-path: polygon(0 0, 50% 100%, 100% 0);
-    transform: rotate(0deg);
-    transform-origin: 70% 30%;
-    transition: transform 2s;
-    background-color: #00d4b0;
-    width: 10em;
-    height: 10em; }
-  header .graphicobject svg {
-    width: 10em;
-    height: 10em;
-    transform-origin: 50% 50%;
-    transition: transform 2s, fill 2s;
-    position: relative;
-    bottom: 7em;
-    transform: rotate(0deg);
-    fill: #00d4b0; }
-  header .graphicobject svg:hover {
-    transform: rotate(1080deg);
-    fill: #4B0082; }
 
 .testsida-wrapper {
   background-color: #00d4b0; }
@@ -351,28 +328,6 @@ header .graphicobject {
 .infostyle {
   background-image: url("../img/flowers_flower3-small.png");
   background-size: cover; }
-
-header .graphicobject {
-  display: flex;
-  justify-content: center; }
-  header .graphicobject .circle {
-    display: none;
-    clip-path: circle(50% at 50% 50%);
-    position: relative;
-    bottom: 7em;
-    background-color: #00d4b0;
-    width: 10em;
-    height: 10em; }
-  header .graphicobject svg {
-    position: relative;
-    bottom: 7em;
-    fill: #00d4b0;
-    width: 10em;
-    height: 10em;
-    transition: transform 2s, fill 2s; }
-  header .graphicobject svg:hover {
-    fill: #4B0082;
-    transform: rotate(360deg); }
 
 .maininfo-wrapper {
   background-color: #4B0082;
