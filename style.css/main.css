@@ -119,7 +119,7 @@ header {
     flex-direction: column; }
 
 .index {
-  background-image: url("../img/flowers_flower1-small.png");
+  background-image: url("../img/flowers_flower1-small-nonnoice.png");
   background-size: cover; }
 
 header h1, header h3 {
@@ -217,7 +217,7 @@ header .graphicobject {
       background-color: #ff2b4f; }
 
 .teststyle {
-  background-image: url("../img/flowers_flower2-small.png");
+  background-image: url("../img/flowers_flower2-small-nonnoice.png");
   background-size: cover; }
 
 .testsida-wrapper {
@@ -326,7 +326,7 @@ header .graphicobject {
       color: #fff; }
 
 .infostyle {
-  background-image: url("../img/flowers_flower3-small.png");
+  background-image: url("../img/flowers_flower3-small-nonnoice.png");
   background-size: cover; }
 
 .maininfo-wrapper {
